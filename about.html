@@ -1,0 +1,127 @@
+---
+layout: base
+title: "About Me"
+permalink: about/
+---
+
+<article class="about">
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section class="about-me">
+        <div class="about-me-aside">
+            <img src="{{ site.data.me.photo | relative_url }}" alt="My photo." />
+        </div>
+        <div class="about-me-content">
+            {% for paragraph in site.data.me.paragraphs %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="about-experience timeline-section">
+        <h2>Experience</h2>
+        <ul>
+            {% for experience in site.data.experience reversed %}
+            <li>
+                <h3 class="item-title">
+                    <span>{{ experience.title }}</span>
+                    <span>{{ experience.company }}</span>
+                </h3>
+                <ul class="item-details">
+                    <li>{{ experience.start }}</li>
+                    <li>{{ experience.end }}</li>
+                </ul>
+                <ul class="item-details">
+                    <li>{{ experience.type }}</li>
+                    <li>{{ experience.location }}</li>
+                    <li>{{ experience.remoteness }}</li>
+                </ul>
+                <p class="item-description">
+                    {{ experience.description }}
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-education timeline-section">
+        <h2>Education</h2>
+        <ul>
+            {% for education in site.data.education reversed %}
+            <li>
+                <h3 class="item-title">
+                    <span>{{ education.title }}</span>
+                    <span>{{ education.school }}</span>
+                </h3>
+                <ul class="item-details">
+                    <li>{{ education.start }}</li>
+                    <li>{{ education.end }}</li>
+                </ul>
+                <ul class="item-details">
+                    <span>{{ education.department }}</span>
+                    <li>{{ education.location }}</li>
+                </ul>
+                <p class="item-description">
+                    {{ education.description }}
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-awards timeline-section">
+        <h2>Awards</h2>
+        <ul>
+            {% for award in site.data.awards %}
+            <li>
+                <h3 class="item-title">{{ award.title }}</h3>
+                <ul class="item-details">
+                    <li>{{ award.date }}</li>
+                    <li>{{ award.issuer }}</li>
+                </ul>
+                <p class="item-description">{{ award.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-projects timeline-section">
+        <h2>Projects</h2>
+        <ul>
+            {% for project in site.data.projects %}
+                <li>
+                    <h3 class="item-title">
+                        {% if project.url %}<a href="{{ project.url }}" target="_blank">{% endif %}
+                            {{ project.title }}
+                        {% if project.url %}</a>{% endif %}
+                    </h3>
+                    {% if project.start or project.end %}
+                        <ul class="item-details">
+                            {% if project.start %}
+                                <li>{{ project.start }}</li>
+                            {% endif %}
+                            {% if project.end %}
+                                <li>{{ project.end }}</li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                    <p class="item-description">{{ project.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about-skills timeline-section">
+        <h2>Skills</h2>
+        <ul>
+            {% for skill in site.skills %}
+                <li>
+                    <h3 class="item-title">{{ skill.title }}</h3>
+                    <div class="item-description">{{ skill.content }}</div>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>

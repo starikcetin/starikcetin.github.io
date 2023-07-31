@@ -1,0 +1,113 @@
+.about {
+    @include flex(column, $row-gap: 30px);
+
+    header {
+        @include no-prose-format;
+    }
+
+    .timeline-section {
+        @include flex(column, $row-gap: 30px);
+
+        >ul {
+            @include timeline-list;
+
+            >li {
+                @include flex(column, $row-gap: 10px);
+            }
+        }
+    }
+
+    .item-title {
+        @include horizontal-list($seperator-width: 1.25em);
+    }
+
+    .item-details {
+        @include horizontal-list($seperator-width: 1.25em);
+        font-size: small;
+    }
+
+    .item-description {
+    }
+
+    &-me {
+        @include no-prose-format;
+        @include flex(row, $column-gap: 30px);
+        align-items: center;
+
+        @media(max-width: $breakpoint-mobile) {
+            @include flex(column, $row-gap: 30px);
+        }
+
+        p {
+            @include line-height-no-top-bottom(1.5);
+        }
+
+        &-aside {
+            @include no-padding-margin;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            flex: 0 0 auto;
+            border-radius: 50%;
+            border: 5px solid var(--color-seperator-hard);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        &-content {
+            @include flex(column, $row-gap: 30px);
+            align-self: stretch;
+            justify-content: center;
+        }
+    }
+
+    &-experience {
+        @include no-prose-format;
+
+        p {
+            @include line-height-no-top-bottom(1.5);
+        }
+    }
+
+    &-education {
+        @include no-prose-format;
+
+        p {
+            @include line-height-no-top-bottom(1.5);
+        }
+    }
+
+    &-awards {
+        @include no-prose-format;
+
+        p {
+            @include line-height-no-top-bottom(1.5);
+        }
+    }
+
+    &-projects {
+        @include no-prose-format;
+
+        p {
+            @include line-height-no-top-bottom(1.5);
+        }
+    }
+
+    &-skills {
+        h2, .item-title {
+            @include no-padding-margin;
+        }
+
+        .item-description {
+            * {
+                @include first-last-margin-fix;
+            }
+        }
+    }
+}

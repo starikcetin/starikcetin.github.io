@@ -1,0 +1,62 @@
+url: "https://starikcetin.github.io"
+baseurl: ""
+
+title: "starikcetin"
+description: "This is the personal website of starikcetin. On this website, you can find information about me, my projects, and my blog posts."
+
+author:
+  name: "starikcetin"
+  email: cetinsamedtarik@gmail.com
+
+# https://shopify.github.io/liquid/filters/date/
+date_format: "%b %-d, %Y"
+
+show_excerpts: true
+# excerpt_length: 50
+
+# https://github.com/scandio/jekyll-paginate-multiple
+paginate_multiple:
+  - paginate: 4
+    paginate_path: '/tech/page:num/'
+    sub_dir: '/tech'
+  - paginate: 4
+    paginate_path: '/life/page:num/'
+    sub_dir: '/life'
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+  - scope:
+      path: "_posts/tech"
+    values:
+      permalink: tech/:title/
+      category: tech
+  - scope:
+      path: "_posts/life"
+    values:
+      permalink: life/:title/
+      category: life
+
+# # https://cuda-chen.github.io/blogging/2020/05/03/Add-Google-Analytics-to-Jekyll-Minima-Theme-Simplified.html
+# google_analytics: UA-XXXXXXXXX-X
+
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+collections:
+  - skills
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-paginate-multiple

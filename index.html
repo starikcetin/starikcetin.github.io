@@ -1,9 +1,15 @@
-<html>
-<head>
-    <title>Under Construction</title>
-</head>
-<body>
-    <h1>Under Construction</h1>
-    <p><a href="https://github.com/starikcetin/" target="_blank">starikcetin</a>'s personal website will be here. Check back soon.</p>
-</body>
-</html>
+---
+layout: base
+title: Home
+permalink: /
+no-header: true
+footer-options:
+    no-border: true
+---
+<div class="home-wrapper">
+    <ul class="home-content">
+        <li><h1>starikcetin</h1></li>
+        <li><nav>{% include nav.html %}</nav></li>
+        <li><p>{{ site.description }}</p></li>
+    </ul>
+</div>

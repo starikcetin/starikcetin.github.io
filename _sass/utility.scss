@@ -1,0 +1,156 @@
+$breakpoint-mobile: 600px;
+
+@function line-height-to-em($line-height) {
+    @return ($line-height * 1em);
+}
+
+@mixin plain-anchor-colors {
+    a {
+        &:link {
+            color: var(--color-plain-link-unvisited);
+        }
+
+        &:visited {
+            color: var(--color-plain-link-visited);
+        }
+
+        &:hover {
+            color: var(--color-plain-link-hover);
+        }
+
+        &:active {
+            color: var(--color-plain-link-active);
+        }
+    }
+}
+
+@mixin no-padding-margin {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin no-list-style {
+    @include no-padding-margin;
+    list-style: none;
+}
+
+@mixin flex($direction, $row-gap: 0, $column-gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+}
+
+@mixin wrapper($content-width, $vertical-padding, $horizontal-padding) {
+    box-sizing: border-box;
+    max-width: $content-width;
+    width: 100%;
+    padding: $vertical-padding $horizontal-padding;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin horizontal-list($seperator-width, $child-selector: "*") {
+    @include no-list-style;
+    @include flex(row);
+    align-items: center;
+    flex-wrap: wrap;
+
+    >#{$child-selector} {
+        @include flex(row);
+        align-items: center;
+        text-align: center;
+
+        &:not(:first-child):before {
+            content: "•";
+            color: var(--color-seperator-hard);
+            width: $seperator-width;
+        }
+    }
+}
+
+@mixin first-last-margin-fix {
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin block-style {
+    @include first-last-margin-fix;
+    margin: 1em 0;
+    border: 1px solid var(--color-seperator-soft);
+}
+
+@mixin self-circle($size, $color) {
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin timeline-list($circle-width: 7px, $stripe-width: 1px, $left-gap: 30px, $item-gap: 30px, $text-height-first: 1, $circle-color: var(--color-seperator-soft), $stripe-color: var(--color-seperator-soft)) {
+    $circle-half-width: floor($circle-width / 2);
+    $stripe-half-width: floor($stripe-width / 2);
+    $text-half-height-first: line-height-to-em($text-height-first) / 2;
+
+    @include no-list-style;
+    @include flex(column, $row-gap: $item-gap);
+
+    >li {
+        position: relative;
+        margin-left: $left-gap;
+
+        // circle
+        &:before {
+            @include self-circle($circle-width, $circle-color);
+            content: "";
+            position: absolute;
+            display: block;
+            top: calc(#{$text-half-height-first} - #{$circle-half-width});
+            left: -$left-gap;
+        }
+
+        // line
+        &:after {
+            content: "";
+            position: absolute;
+            top: calc(#{$text-half-height-first});
+            left: calc(-#{$left-gap} - #{$stripe-half-width} + #{$circle-half-width});
+            width: $stripe-width;
+            background-color: $stripe-color;
+        }
+
+        // line: first and middle item
+        &:not(:last-child):after {
+            height: calc(100% + #{$item-gap});
+        }
+
+        // line: last item
+        &:last-child:after {
+            height: calc(100% - #{$text-half-height-first});
+        }
+    }
+}
+
+@mixin no-prose-format {
+    p, h1, h2, h3, h4, h5, h6 {
+        @include no-padding-margin;
+    }
+}
+
+@mixin line-height-no-top-bottom($line-height) {
+    $excess: line-height-to-em($line-height - 1) / 2;
+    line-height: $line-height;
+    margin-top: -$excess;
+    margin-bottom: -$excess;
+}
+
+@mixin if-not-in-post {
+    &:not(.post *) {
+        @content;
+    }
+}

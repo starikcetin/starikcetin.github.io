@@ -1,0 +1,5 @@
+<ul class="nav-list">
+{% for nav-page in site.data.nav-pages %}
+    <li><a {% if nav-page.rel and nav-page.rel != "" %}rel="{{ nav-page.rel }}" {% endif %}href="{{ nav-page.url }}">{{ nav-page.name }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+- name: "About Me"
+  url: /about
+  rel: "author"
+
+- name: "Tech Blog"
+  url: /tech
+
+- name: "Life Blog"
+  url: /life

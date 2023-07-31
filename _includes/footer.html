@@ -1,0 +1,19 @@
+<div class="footer-content">
+  {% unless page.footer-options.no-socials %}
+    {% include socials.html %}
+  {% endunless %}
+
+  {% unless page.footer-options.no-site-utils %}
+    <ul class="footer-site-list">
+      <li><a rel="alternate" href="{{ "feed.xml" | absolute_url }}">Feed</a></li>
+      <li><a rel="sitemap" href="{{ "sitemap.xml" | absolute_url }}">Sitemap</a></li>
+      <li>{% include theme-toggle.html %}</li>
+    </ul>
+  {% endunless %}
+
+  {% unless page.footer-options.no-copyright %}
+    <ul class="footer-copyright-list">
+      <li>&copy; {{ site.author.name }}. All rights reserved.</li>
+    </ul>  
+  {% endunless %}
+</div>

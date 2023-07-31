@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    <div class="root-container">
+      {% unless page.no-header %}
+        <header class="site-header">
+          <div class="wrapper">
+            {% include header.html %}
+          </div>
+        </header>
+      {% endunless %}
+
+      <main class="site-main">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+      {% unless page.no-footer %}
+        <footer class="site-footer{% if page.footer-options.no-border %} no-border{% endif %}">
+          <div class="wrapper">
+            {% include footer.html %}
+          </div>
+        </footer>
+      {% endunless %}
+    </div>
+  </body>
+</html>
