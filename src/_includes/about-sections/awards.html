@@ -1,6 +1,6 @@
 <section>
     <h2>Awards</h2>
-    {% for award in site.data.awards %}
+    {%- for award in site.data.awards -%}
         <h3 class="title">{{ award.title }}</h3>
 
         <ul class="details horizontal-list font-small">
@@ -9,12 +9,12 @@
         </ul>
 
         <ul class="description feather-ul">
-            {% for award-description-item in award.description %}
+            {%- for award-description-item in award.description -%}
                 <li>
                     <i data-feather="arrow-right"></i>
-                    {{ award-description-item }}
+                    {{- award-description-item -}}
                 </li>
-            {% endfor %}
+            {%- endfor -%}
         </ul>
-    {% endfor %}
+    {%- endfor -%}
 </section>

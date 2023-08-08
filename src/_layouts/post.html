@@ -10,11 +10,11 @@ layout: base
     </ul>
   </header>
   <div>
-    {% comment %} {{ content }} {% endcomment %}
-    {% capture anchor-body %}<i data-feather="anchor"></i>{% endcapture %}
-    {% include anchor-headings.html html=content anchorBody=anchor-body anchorClass="heading-anchor" anchorTitle="Link to this heading" %}
+    {%- comment %} {{ content }} {% endcomment -%}
+    {%- capture anchor-body %}<i data-feather="anchor"></i>{% endcapture -%}
+    {%- include anchor-headings.html html=content anchorBody=anchor-body anchorClass="heading-anchor" anchorTitle="Link to this heading" -%}
   </div>
   <footer>
-    {% include comment-section.html %}
+    {%- include comment-section.html -%}
   </footer>
 </article>

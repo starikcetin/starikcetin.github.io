@@ -1,25 +1,25 @@
 <section>
     <h2 id="experience">Experience</h2>
-    {% for experience in site.data.experience %}
-        {% assign should-render-positions = false %}
-        {% if experience.positions and experience.positions.size > 0 %}
-            {% assign should-render-positions = true %}
-        {% endif %}
+    {%- for experience in site.data.experience -%}
+        {%- assign should-render-positions = false -%}
+        {%- if experience.positions and experience.positions.size > 0 -%}
+            {%- assign should-render-positions = true -%}
+        {%- endif -%}
 
         <h3 class="title">
             <span class="horizontal-list-inline">
                 <span>{{ experience.company }}</span>
-                {% if experience.title %}
+                {%- if experience.title -%}
                     <span>{{ experience.title }}</span>
-                {% endif %}
+                {%- endif -%}
             </span>
         </h3>
 
-        {% include about-sections/parts/experience-details.html data=experience %}
+        {%- include about-sections/parts/experience-details.html data=experience -%}
 
-        {% if should-render-positions == true and experience.parts-as-details == true %}
+        {%- if should-render-positions == true and experience.parts-as-details == true -%}
             <ul class="parts-as-details feather-ul font-small">
-                {% for position in experience.positions %}
+                {%- for position in experience.positions -%}
                     <li>
                         <i data-feather="chevrons-right"></i>
                         <ul class="horizontal-list">
@@ -29,28 +29,28 @@
                             <li>{{ position.end }}</li>
                         </ul>
                     </li>
-                {% endfor %}
+                {%- endfor -%}
             </ul>
-        {% endif %}
+        {%- endif -%}
 
         <ul class="description feather-ul">
-            {% for experience-description-item in experience.description %}
+            {%- for experience-description-item in experience.description -%}
                 <li><i data-feather="arrow-right"></i>{{ experience-description-item }}</li>
-            {% endfor %}
+            {%- endfor -%}
         </ul>
 
-        {% if should-render-positions == true and experience.parts-as-details == false %}
+        {%- if should-render-positions == true and experience.parts-as-details == false -%}
             <div class="parts">
-                {% for position in experience.positions %}
+                {%- for position in experience.positions -%}
                     <h4 class="title">{{ position.title }}</h4>
-                    {% include about-sections/parts/experience-details.html data=position %}
+                    {%- include about-sections/parts/experience-details.html data=position -%}
                         <ul class="description feather-ul">
-                            {% for position-description-item in position.description %}
+                            {%- for position-description-item in position.description -%}
                                 <li><i data-feather="arrow-right"></i>{{ position-description-item }}</li>
-                            {% endfor %}
+                            {%- endfor -%}
                         </ul>
-                {% endfor %}
+                {%- endfor -%}
             </div>
-        {% endif %}
-    {% endfor %}
+        {%- endif -%}
+    {%- endfor -%}
 </section>
