@@ -8,6 +8,10 @@ This blog post is a placeholder for testing. I might delete it in the future.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. `inline code` Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. [Vestibulum](example.com) lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. `inline code` Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. [Vestibulum](example.com) lacus tortor, ultricies id dignissim ac, bibendum in velit.
+
 ### Third level heading `inline code`
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. `inline code` Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. [Vestibulum](example.com) lacus tortor, ultricies id dignissim ac, bibendum in velit.
@@ -60,3 +64,4 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem i
   </body>
 </html>
 ```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. `inline code` Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. [Vestibulum](example.com) lacus tortor, ultricies id dignissim ac, bibendum in velit.

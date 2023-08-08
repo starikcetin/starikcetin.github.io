@@ -125,3 +125,13 @@ blockquote {
         margin-left: 0;
     }
 }
+
+.giscus-container {
+    margin-top: 1.5rem;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: pixels(1) solid var(--color-seperator-soft);
+}
