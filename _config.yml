@@ -46,8 +46,7 @@ defaults:
       permalink: life/:title/
       category: life
 
-# # https://cuda-chen.github.io/blogging/2020/05/03/Add-Google-Analytics-to-Jekyll-Minima-Theme-Simplified.html
-# google_analytics: UA-XXXXXXXXX-X
+google_analytics: G-KKRK5B4KKQ
 
 markdown: kramdown
 
