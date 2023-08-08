@@ -1,12 +1,17 @@
+source: src
+destination: dist
+
 url: "https://starikcetin.github.io"
 baseurl: ""
 
-title: "starikcetin"
-description: "This is the personal website of starikcetin. On this website, you can find information about me, my projects, and my blog posts."
+title: "S. Tarık Çetin"
+description: "This is my personal website. On this website, you can find information about me, my blog posts, and some other things."
 
 author:
-  name: "starikcetin"
-  email: cetinsamedtarik@gmail.com
+  name: "S. Tarık Çetin"
+  email:
+    name: cetinsamedtarik
+    domain: gmail.com
 
 # https://shopify.github.io/liquid/filters/date/
 date_format: "%b %-d, %Y"
@@ -28,11 +33,13 @@ defaults:
       path: "_posts"
     values:
       layout: post
+
   - scope:
       path: "_posts/tech"
     values:
       permalink: tech/:title/
       category: tech
+
   - scope:
       path: "_posts/life"
     values:
@@ -51,8 +58,8 @@ kramdown:
     block:
       line_numbers: true
 
-collections:
-  - skills
+sass:
+  style: compressed
 
 plugins:
   - jekyll-feed

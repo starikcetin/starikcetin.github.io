@@ -1,0 +1,127 @@
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:link {
+        color: var(--color-link-unvisited);
+    }
+
+    &:visited {
+        color: var(--color-link-visited);
+    }
+
+    &:hover {
+        color: var(--color-link-hover);
+    }
+
+    &:active {
+        color: var(--color-link-active);
+    }
+}
+
+table:not(.rouge-table) {
+    @include block-style;
+    border-collapse: collapse;
+
+    td, th {
+        padding: 0.5rem 1rem;
+        border: 0.1rem solid var(--color-seperator-soft);
+    }
+}
+
+.highlighter-rouge {
+    @include block-style;
+
+    pre.highlight {
+        padding: 0.5rem 1rem;
+        margin: 0;
+        overflow: auto;
+    }
+}
+
+.root-container {
+    @include flex(column);
+    min-height: 100vh;
+}
+
+.theme-toggle {
+    @include imitate-plain-anchor;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    @include if-dark-theme {
+        .feather-moon {
+            display: none;
+        }
+    }
+
+    @include if-light-theme {
+        .feather-sun {
+            display: none;
+        }
+    }
+}
+
+.feather {
+    width: 0.9em;
+    height: 0.9em;
+    margin: 0 0.25em 0.2em 0.25em;
+    vertical-align: middle;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.feather-ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+        position: relative;
+
+        .feather {
+            position: absolute;
+            margin: 0;
+            left: -1.25em;
+            top: 0.3em;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    &:not(:hover) {
+        .heading-anchor {
+            opacity: 15%;
+        }
+    }
+}
+
+blockquote {
+    border-left: pixels(1) solid var(--color-seperator-soft);
+    padding: 0.75rem 0 0.75rem 1rem;
+    margin-left: 1.5rem;
+    margin-right: 0;
+
+    *:first-child {
+        margin-top: 0;
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    @include if-mobile {
+        margin-left: 0;
+    }
+}

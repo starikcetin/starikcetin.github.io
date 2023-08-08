@@ -1,0 +1,14 @@
+<ul class="around-the-web-list">
+  {% for social in site.data.socials %}
+    <li>
+      <a rel="me" target="_blank" href="{{ social.url }}">
+        <i data-feather="{{ social.icon }}"></i>{{ social.name }}
+      </a>
+    </li>
+  {% endfor %}
+    <li>
+      <a data-mail="{{ site.author.email.name }}" data-domain="{{ site.author.email.domain }}">
+        <i data-feather="mail"></i>Email
+      </a>
+    </li>
+</ul>

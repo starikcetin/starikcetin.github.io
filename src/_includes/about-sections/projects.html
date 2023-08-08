@@ -1,0 +1,43 @@
+<section class="about-timeline-section">
+    <h2>Projects</h2>
+    {% for project in site.data.projects %}
+        <h3 class="title">{{ project.title }}</h3>
+
+        {% assign should-render-details = false %}
+        {% capture details-html %}
+            <ul class="details horizontal-list font-small">
+                {% if project.urls.size == 1 %}
+                    {% assign should-render-details = true %}
+                    <li><a href="{{ project.urls[0] }}" target="_blank">{{ project.urls[0] | remove: "https://" | remove: "http://" }}</a></li>
+                {% endif %}
+                {% if project.proprietary == true %}
+                    {% assign should-render-details = true %}
+                    <li>Proprietary</li>
+                {% endif %}
+            </ul>
+        {% endcapture %}
+        {% if should-render-details %}
+            {{ details-html }}
+        {% endif %}
+
+        {% if project.urls.size > 1 %}
+            <ul class="parts-as-details feather-ul font-small">
+                {% for url in project.urls %}
+                    <li>
+                        <i data-feather="chevrons-right"></i>
+                        <a href="{{ url }}" target="_blank">{{ url | remove: "https://" | remove: "http://" }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <ul class="description feather-ul">
+            {% for project-description-item in project.description %}
+                <li>
+                    <i data-feather="arrow-right"></i>
+                    {{ project-description-item }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</section>

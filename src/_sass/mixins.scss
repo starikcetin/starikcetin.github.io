@@ -1,0 +1,124 @@
+@mixin plain-anchor {
+    a {
+        cursor: pointer;
+
+        &:link {
+            color: var(--color-plain-link-unvisited);
+        }
+
+        &:visited {
+            color: var(--color-plain-link-visited);
+        }
+
+        &:hover {
+            color: var(--color-plain-link-hover);
+        }
+
+        &:active {
+            color: var(--color-plain-link-active);
+        }
+    }
+}
+
+@mixin imitate-anchor {
+    cursor: pointer;
+    color: var(--color-link-unvisited);
+
+    &:hover {
+        color: var(--color-link-hover);
+    }
+
+    &:active {
+        color: var(--color-link-active);
+    }
+}
+
+@mixin imitate-plain-anchor {
+    cursor: pointer;
+    color: var(--color-plain-link-unvisited);
+
+    &:hover {
+        color: var(--color-plain-link-hover);
+    }
+
+    &:active {
+        color: var(--color-plain-link-active);
+    }
+}
+
+@mixin flex($direction, $row-gap: 0, $column-gap: 0, $inline: false) {
+    @if $inline {
+        display: inline-flex;
+    } @else {
+        display: flex;
+    }
+
+    flex-direction: $direction;
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+}
+
+@mixin wrapper($content-width: pixels(800), $top-padding: 1.5rem, $bottom-padding: 1.5rem, $horizontal-padding: 1.5rem) {
+    $horizontal-padding: ensure-unit-if-zero($horizontal-padding);
+
+    box-sizing: border-box;
+    max-width: $content-width + (2 * $horizontal-padding);
+    width: 100%;
+    padding: $top-padding $horizontal-padding $bottom-padding $horizontal-padding;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin horizontal-list($seperator-width, $child-selector: "> *", $inline: false) {
+    @include flex(row, $inline: $inline);
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+
+    #{$child-selector} {
+        @include flex(row);
+
+        &:not(:first-child):before {
+            content: "\2022";
+            color: var(--color-seperator-hard);
+            width: $seperator-width;
+            text-align: center;
+        }
+    }
+}
+
+@mixin block-style {
+    margin: 1rem 0;
+    border: pixels(1) solid var(--color-seperator-soft);
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin if-mobile {
+    @media(max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin if-dark-theme($selector: "&") {
+    @at-root html[data-theme="dark"]{
+        #{$selector} {
+            @content;
+        }
+    }
+}
+
+@mixin if-light-theme($selector: "&") {
+    @at-root html[data-theme="light"]{
+        #{$selector} {
+            @content;
+        }
+    }
+}

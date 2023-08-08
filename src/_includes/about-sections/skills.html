@@ -1,0 +1,19 @@
+<section class="about-timeline-section">
+    <h2>Skills</h2>
+    {% for skill in site.data.skills %}
+        <h3 class="title">{{ skill.title }}</h3>
+        <ul class="details horizontal-list font-small">
+            {% assign total-experience-years = 'now' | date: "%Y" | minus: skill.total-experience-since-year %}
+            <li>Total experience {{ total-experience-years }}+ years</li>
+            <li>See&nbsp;<a href="#experience">Experience</a>&nbsp;for professional-only</li>
+        </ul>
+        <ul class="description feather-ul">
+            {% for skill-description-item in skill.description %}
+                <li>
+                    <i data-feather="arrow-right"></i>
+                    {{ skill-description-item }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</section>

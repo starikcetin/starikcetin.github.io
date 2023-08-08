@@ -1,0 +1,57 @@
+- title: Eflatun.SceneReference
+  urls: 
+    - https://github.com/starikcetin/Eflatun.SceneReference
+  description:
+    - Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
+
+- title: Blockchain Technology Education Software (BTES)
+  urls: 
+    - https://github.com/ctisbtes/btes
+  description: 
+    - Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
+
+- title: ARCitizen
+  proprietary: true
+  description:
+    - Internship project for Parabol, with Unity and Vuforia. Mobile AR application providing real-time junction information, traffic events, and public CCTV feeds in supported cities.
+
+- title: Git UPM Publisher
+  urls: 
+    - https://github.com/starikcetin/git-upm-publisher-2
+  description:
+    - Automates UPM package releases for Git repositories containing Unity plugins.
+
+- title: Learning Unity ECS
+  urls:
+    - https://github.com/starikcetin/Learning-Unity-ECS
+    - https://github.com/starikcetin/Learning-Unity-ECS-2
+  description:
+    - Educational repositories with several small projects using the new ECS and Job System of Unity.
+
+- title: Quick Play Tool
+  urls: 
+    - https://github.com/starikcetin/Quick-Play-Tool
+  description:
+    - Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
+
+- title: Quick Play Tool
+  urls: 
+    - https://github.com/starikcetin/Quick-Play-Tool
+  description:
+    - Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
+
+- title: BindingsRx TextMeshPro
+  urls: 
+    - https://github.com/starikcetin/BindingsRx-TextMeshPro
+  description:
+    - Unity plugin implementing BindingsRx support for TextMeshPro.
+
+- title: Unity CCD Locker
+  urls: 
+    - https://github.com/starikcetin/unity-ccd-locker
+  description:
+    - Git-based locking mechanism preventing simultaneous operations on Unity CCD buckets.
+
+- title: More?
+  description: |
+    Visit my GitHub profile to see more of my open source work.

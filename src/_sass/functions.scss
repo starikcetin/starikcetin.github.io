@@ -1,0 +1,19 @@
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function ensure-unit-if-zero($number) {
+    @if type-of($number) == 'number' and unitless($number) and $number == 0 {
+        @return 0rem;
+    }
+
+    @return $number;
+}
+
+@function pixels($number) {
+    @return 1rem * $number / strip-unit($root-font-size);
+}

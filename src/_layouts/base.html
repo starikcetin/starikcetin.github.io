@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    <div class="root-container">
+      {% unless page.no-header %}
+        {% include header.html %}
+      {% endunless %}
+
+      <main class="site-main">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+      {% unless page.no-footer %}
+        {% include footer.html %}
+      {% endunless %}
+    </div>
+
+    <script type="text/javascript" src="{{ '/assets/js/feather-icons.js' | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/email-masker.js' | absolute_url }}"></script>
+  </body>
+</html>
