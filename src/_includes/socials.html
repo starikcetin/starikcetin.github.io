@@ -7,8 +7,8 @@
     </li>
   {%- endfor -%}
     <li>
-      <a data-mail="{{ site.author.email.name }}" data-domain="{{ site.author.email.domain }}">
+      <button class="imitate-link email-trigger" data-name="{{ site.author.email.name }}" data-domain="{{ site.author.email.domain }}">
         <i data-feather="mail"></i>Email
-      </a>
+      </button>
     </li>
 </ul>

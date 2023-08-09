@@ -51,7 +51,6 @@ table:not(.rouge-table) {
 
 .theme-toggle {
     @include imitate-plain-anchor;
-    cursor: pointer;
 
     input {
         display: none;
@@ -134,4 +133,34 @@ hr {
     margin: 1.5rem 0;
     border: 0;
     border-top: pixels(1) solid var(--color-seperator-soft);
+}
+
+/* https://stackoverflow.com/a/12642009/6301627 */
+button, input[type=button], input[type=reset], input[type=submit] {
+    &.imitate-link {
+        @include imitate-plain-anchor;
+        background: none;
+        border-style: none;
+        box-sizing: content-box;
+        display: inline-block;
+        font: inherit;
+        height: auto;
+        padding: 0;
+        perspective-origin: 0 0;
+        text-align: start;
+        transform-origin: 0 0;
+        width: auto;
+        -moz-appearance: none;
+        -webkit-logical-height: 1em;
+        -webkit-logical-width: auto;
+        outline: none;
+        line-height: inherit;
+
+        @supports (-moz-appearance:none) {
+            &::-moz-focus-inner {
+                border: none;
+                padding: 0;
+            }
+        }
+    }
 }

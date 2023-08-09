@@ -49,9 +49,9 @@ const setup = () => {
     el.appendChild(giscusScript);
   });
 
-  document.querySelectorAll('a[data-mail]').forEach(el => {
+  document.querySelectorAll('.email-trigger').forEach(el => {
     el.onclick = () => {
-      window.location = 'mailto:' + el.dataset.mail + '@' + el.dataset.domain + '?subject=Contact from starikcetin.github.io';
+      window.location = 'mailto:' + el.dataset.name + '@' + el.dataset.domain + '?subject=Contact from starikcetin.github.io';
     };
   });
 
