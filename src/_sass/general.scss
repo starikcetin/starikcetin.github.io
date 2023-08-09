@@ -145,16 +145,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
         display: inline-block;
         font: inherit;
         height: auto;
+        line-height: inherit;
+        outline: none;
         padding: 0;
         perspective-origin: 0 0;
         text-align: start;
         transform-origin: 0 0;
         width: auto;
         -moz-appearance: none;
-        -webkit-logical-height: 1em;
+        -webkit-logical-height: auto;
         -webkit-logical-width: auto;
-        outline: none;
-        line-height: inherit;
 
         @supports (-moz-appearance:none) {
             &::-moz-focus-inner {
