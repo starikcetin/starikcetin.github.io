@@ -6,9 +6,13 @@
         {%- assign should-render-details = false -%}
         {%- capture details-html -%}
             <ul class="details horizontal-list font-small">
-                {%- if project.urls.size == 1 -%}
+                {%- if project.size & project.links.size > 0 -%}
                     {%- assign should-render-details = true -%}
-                    <li><a href="{{ project.urls[0] }}" target="_blank">{{ project.urls[0] | remove: "https://" | remove: "http://" }}</a></li>
+                    {%- for link in project.links -%}
+                        <li>
+                            <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+                        </li>
+                    {%- endfor -%}
                 {%- endif -%}
                 {%- if project.proprietary == true -%}
                     {%- assign should-render-details = true -%}
@@ -18,17 +22,6 @@
         {%- endcapture -%}
         {%- if should-render-details -%}
             {{- details-html -}}
-        {%- endif -%}
-
-        {%- if project.urls.size > 1 -%}
-            <ul class="parts-as-details feather-ul font-small">
-                {%- for url in project.urls -%}
-                    <li>
-                        <i data-feather="chevrons-right"></i>
-                        <a href="{{ url }}" target="_blank">{{ url | remove: "https://" | remove: "http://" }}</a>
-                    </li>
-                {%- endfor -%}
-            </ul>
         {%- endif -%}
 
         <ul class="description feather-ul">
