@@ -1,0 +1,22 @@
+---
+---
+
+{%- assign title = 'Privacy Policy of ' | append: page.data.name -%}
+
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>Last update {{ page.data.last-update }}</p>
+    <hr/>
+    <p>{{ page.data.name }} {{ page.data.type }} collects no private data at all. Your data will not be used in any way, because we don't have it.</p>
+    <p>If you have any questions, please contact us below.</p> 
+    <p>Contact: <span><button id="email-trigger">Reveal</button></span></p>
+    <script>
+        document.getElementById("email-trigger").onclick = function() {
+            this.parentElement.innerHTML = 
+            '<a href="mailto:{{ page.data.email.name }}@{{ page.data.email.domain }}?subject=Contact from {{ title }}">{{ page.data.email.name }}@{{ page.data.email.domain }}</a>';
+        }
+    </script>
+</body>
