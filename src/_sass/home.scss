@@ -1,5 +1,5 @@
 .home-wrapper {
-    @include wrapper($content-width: pixels(500), $top-padding: 0, $bottom-padding: 0, $horizontal-padding: 0);
+    @include wrapper($content-width: pixels-content(500), $top-padding: 0, $bottom-padding: 0, $horizontal-padding: 0);
     @include flex(column);
     height: 100%;
     justify-content: center;

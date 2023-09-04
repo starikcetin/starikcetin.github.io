@@ -58,7 +58,7 @@
     column-gap: $column-gap;
 }
 
-@mixin wrapper($content-width: pixels(800), $top-padding: 1.5rem, $bottom-padding: 1.5rem, $horizontal-padding: 1.5rem) {
+@mixin wrapper($content-width: pixels-content(800), $top-padding: 1.5rem, $bottom-padding: 1.5rem, $horizontal-padding: 1.5rem) {
     $horizontal-padding: ensure-unit-if-zero($horizontal-padding);
 
     box-sizing: border-box;
@@ -69,7 +69,7 @@
     margin-right: auto;
 }
 
-@mixin horizontal-list($seperator-width, $child-selector: "> *", $inline: false) {
+@mixin horizontal-list($seperator-width, $child-selector: "> *", $inline: false, $skip: 0) {
     @include flex(row, $inline: $inline);
     padding: 0;
     list-style: none;
@@ -79,18 +79,24 @@
     #{$child-selector} {
         @include flex(row);
 
-        &:not(:first-child):before {
-            content: "\2022";
-            color: var(--color-seperator-hard);
-            width: $seperator-width;
-            text-align: center;
+        &:not(:last-child) {
+            margin-right: $seperator-width/2;
+        }
+
+        &#{selector-skip($skip + 1)} {
+            &:before {
+                margin-right: $seperator-width/2;
+                content: "\2022";
+                color: var(--color-seperator-hard);
+                text-align: center;
+            }
         }
     }
 }
 
 @mixin block-style {
     margin: 1rem 0;
-    border: pixels(1) solid var(--color-seperator-soft);
+    border: pixels-content(1) solid var(--color-seperator-soft);
 
     &:first-child {
         margin-top: 0;
@@ -101,8 +107,14 @@
     }
 }
 
-@mixin if-mobile {
-    @media(max-width: $breakpoint-mobile) {
+@mixin media-max($breakpoint) {
+    @media(max-width: ($breakpoint - pixels-media(1))) {
+        @content;
+    }
+}
+
+@mixin media-min($breakpoint) {
+    @media(min-width: $breakpoint) {
         @content;
     }
 }

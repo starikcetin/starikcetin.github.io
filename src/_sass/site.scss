@@ -1,6 +1,8 @@
 .site-header {
+    $breakpoint: pixels-media(650);
+
     @include plain-anchor;
-    border-bottom: pixels(1) solid var(--color-seperator-soft);
+    border-bottom: pixels-content(1) solid var(--color-seperator-soft);
 
     nav {
         @include wrapper($top-padding: 1rem, $bottom-padding: 1.25rem);
@@ -8,7 +10,7 @@
         justify-content: space-between;
         align-items: baseline;
 
-        @include if-mobile {
+        @include media-max($breakpoint) {
             @include flex(column);
             align-items: center;
         }
@@ -17,7 +19,7 @@
             @include horizontal-list($seperator-width: 2em);
             margin: 0;
 
-            @include if-mobile {
+            @include media-max($breakpoint) {
                 margin-top: 1rem;
             }
         }
@@ -38,7 +40,7 @@
     @include plain-anchor;
 
     &:not(.no-seperate) {
-        border-top: pixels(1) solid var(--color-seperator-soft);
+        border-top: pixels-content(1) solid var(--color-seperator-soft);
     }
 
     .content {

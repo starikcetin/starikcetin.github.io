@@ -1,72 +1,476 @@
-- title: Eflatun.SceneReference
-  links: 
+- name: Albert Junior
+  type: Proprietary
+  for: Albert
+  involvement: [Development, DevOps, Project Management, Leadership]
+  categories: [Game, Educational, Mobile, Unity, CI/CD, GitHub Actions]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=se.mralbert.junior
+    - name: App Store
+      url: https://apps.apple.com/no/app/albert-junior/id1486597368
+  youtube-id: fo1ILA-yikk
+  description: # TODO
+
+- name: 8 Puzzle
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Game, Web, JQuery]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/8-puzzle
+    - name: Website
+      url: https://starikcetin.github.io/8-puzzle
+  youtube-id: XPpebuDhdXM
+  description: # TODO
+
+- name: Blockchain Technology Education Software
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development, DevOps, Project Management, Leadership]
+  categories: [App, Educational, Web, React, Node]
+  links:
+    - name: GitHub
+      url: https://github.com/ctisbtes/btes
+  youtube-id: # TODO
+  description: >
+    Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
+
+- name: Computer Graphics Final
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Demo, Desktop, OpenGL, GLUT]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/computer-graphics-final
+    - name: Download
+      url: https://github.com/starikcetin/computer-graphics-final/releases/tag/build
+  youtube-id: KMD9lkEcwl8
+  description: # TODO
+
+- name: Guess the Number
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Java]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/ctis487-term-project
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.ctis487.guessthenumber
+  youtube-id: o14L_kNbGyk
+  description: # TODO
+
+- name: Technical Math Projects
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Game, Animation, Desktop, OpenGL, GLUT]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/technical-math-projects
+    - name: Download
+      url: https://github.com/starikcetin/technical-math-projects/releases/tag/builds
+  youtube-id: TvdwiwdOOVk
+  description: # TODO
+
+- name: Hexfall Clone
+  type: Case Study
+  for: Vertigo Games
+  involvement: [Development]
+  categories: [Game, Mobile, Unity]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/hexfall-clone
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.hexfallClone
+  youtube-id: kYdHKUxCctw
+  description: # TODO
+
+- name: Space Invaders Clone
+  type: Case Study
+  for: Masomo Games
+  involvement: [Development]
+  categories: [Game, Mobile, Cocos2d-x]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/space-invaders-clone
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.spaceinvaders
+  youtube-id: UAQnx0tBGQY
+  description: # TODO
+
+- name: Best Painter
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.bestpainter
+  youtube-id: 3WbGQjwfScU
+  description: # TODO
+
+- name: Bracelet Run
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.braceletrun
+  youtube-id: N8jgqYt-B3Q
+  description: # TODO
+
+- name: Car Wash Run
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.carwashrun
+  youtube-id: 7fkrnVPxslw
+  description: # TODO
+
+- name: Church Life 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.churchlife3d
+  youtube-id: Jh7OU-Swvl8
+  description: # TODO
+
+- name: Feet Runner
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.feetrunner3d
+  youtube-id: 0ahSaYObaW4
+  description: # TODO
+
+- name: Hold My Hand
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.holdmyhand
+  youtube-id: 6A7B1Or_ydo
+  description: # TODO
+
+- name: Hospital Run 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.hospitalrun
+  youtube-id: uvEjSWLJFm8
+  description: # TODO
+
+- name: Ice Cream Stack
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.icecreamstack
+  youtube-id: z75JahNZJeQ
+  description: # TODO
+
+- name: Judgement Run
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play (Judgement Run)
+      url: https://play.google.com/store/apps/details?id=com.easyclap.judgementrun
+    - name: Google Play (Run and Judge)
+      url: https://play.google.com/store/apps/details?id=com.easyclap.runandjudge
+  youtube-id: dzN_S5_m7UU
+  description: # TODO
+
+- name: Luggage Rush
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.luggagerush
+  youtube-id: 6IecOEre9aE
+  description: # TODO
+
+- name: Merge Puzzle 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.mergepuzzle3d
+  youtube-id: AzAizo41JSc
+  description: # TODO
+
+- name: Muscle Ball 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.musclefootball3d
+  youtube-id: -uik1EdOczc
+  description: # TODO
+
+- name: Powder Paint
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.powderpaint
+  youtube-id: hY6ATvFr99g
+  description: # TODO
+
+- name: Presidency Run 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.presidencyrun3d
+  youtube-id: Av708WXAd8k
+  description: # TODO
+
+- name: Psychologist 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.psychologist3d
+  youtube-id: d3YVStN9Te4
+  description: # TODO
+
+- name: School Run 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.schoolrun3d
+  youtube-id: v8oNtb732NY
+  description: # TODO
+
+- name: Snake Rush 3D
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.snakerush3d
+  youtube-id: pdmpobXmlOE
+  description: # TODO
+
+- name: Stack Coaster
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.stackcoaster
+  youtube-id: ponOaqOGFq8
+  description: # TODO
+
+- name: Stuck In Sims
+  type: Competition
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Desktop, VR, Unity]
+  links:
+    - name: Website
+      url: https://globalgamejam.org/2022/games/stuck-sims-5
+  youtube-id: # TODO
+  description: # TODO
+
+- name: Sugarcane Juice Making
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.sugarcanejuicer
+  youtube-id: 4qz-EOfA934
+  description: # TODO
+
+- name: Table Football Run
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.tablefootballrun
+  youtube-id: p_MlNB0M9Hw
+  description: # TODO
+
+- name: Theme Park Dude
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.themeparkdude
+  youtube-id: wzehr6UpEtk
+  description: # TODO
+
+- name: Tire Jump
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.tirejump
+  youtube-id: JqCbvuvxKVw
+  description: # TODO
+
+- name: Toy Crane Run
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.toycranerun
+  youtube-id: 0y-AShl6YRA
+  description: # TODO
+
+- name: Wide President
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.easyclap.widepresident
+  youtube-id: Q7CZcNein8o
+  description: # TODO
+
+- name: [Word Dice Pro, Word Dice 3D]
+  type: Proprietary
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Hypercasual, Unity]
+  links:
+    - name: Google Play (Word Dice Pro)
+      url: https://play.google.com/store/apps/details?id=com.easyclap.worddicepro
+    - name: Google Play (Word Dice 3D)
+      url: https://play.google.com/store/apps/details?id=com.easyclap.worddice
+  youtube-id: # TODO
+  description: # TODO
+
+- name: BindingsRx TextMeshPro
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Plugin, Unity]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/BindingsRx-TextMeshPro
+    - name: OpenUPM
+      url: https://openupm.com/packages/com.starikcetin.bindingsrx-textmeshpro
+  youtube-id: # TODO
+  description: >
+    Unity plugin implementing BindingsRx support for TextMeshPro.
+
+- name: Eflatun.SceneReference
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Plugin, Unity]
+  links:
     - name: GitHub
       url: https://github.com/starikcetin/Eflatun.SceneReference
     - name: OpenUPM
       url: https://openupm.com/packages/com.eflatun.scenereference
-  description:
-    - Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
+  youtube-id: # TODO
+  description: >
+    Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
 
-- title: Blockchain Technology Education Software (BTES)
-  links: 
-    - name: GitHub
-      url: https://github.com/ctisbtes/btes
-  description: 
-    - Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
-
-- title: ARCitizen
-  proprietary: true
-  description:
-    - Internship project for Parabol, with Unity and Vuforia. Mobile AR application providing real-time junction information, traffic events, and public CCTV feeds in supported cities.
-
-- title: Git UPM Publisher
-  links: 
+- name: Git UPM Publisher
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Tool, Unity, Node]
+  links:
     - name: GitHub
       url: https://github.com/starikcetin/git-upm-publisher-2
     - name: NPM
       url: https://www.npmjs.com/package/git-upm-publisher
-  description:
-    - Automates UPM package releases for Git repositories containing Unity plugins.
+  youtube-id: # TODO
+  description: >
+    Automates UPM package releases for Git repositories containing Unity plugins.
 
-- title: Learning Unity ECS
+- name: Learning Unity ECS
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Guide, Unity]
   links:
     - name: GitHub (1st repo)
       url: https://github.com/starikcetin/Learning-Unity-ECS
     - name: GitHub (2nd repo)
       url: https://github.com/starikcetin/Learning-Unity-ECS-2
-  description:
-    - Educational repositories with several small projects using the new ECS and Job System of Unity.
+  youtube-id: # TODO
+  description: >
+    Educational repositories with several small projects using the new ECS and Job System of Unity.
 
-- title: Quick Play Tool
-  links: 
+- name: Quick Play Tool
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Plugin, Unity]
+  links:
     - name: GitHub
       url: https://github.com/starikcetin/Quick-Play-Tool
     - name: OpenUPM
       url: https://openupm.com/packages/com.starikcetin.quickplaytool
-  description:
-    - Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
+  youtube-id: # TODO
+  description: >
+    Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
 
-- title: BindingsRx TextMeshPro
-  links: 
-    - name: GitHub
-      url: https://github.com/starikcetin/BindingsRx-TextMeshPro
-    - name: OpenUPM
-      url: https://openupm.com/packages/com.starikcetin.bindingsrx-textmeshpro
-  description:
-    - Unity plugin implementing BindingsRx support for TextMeshPro.
-
-- title: Unity CCD Locker
-  links: 
+- name: Unity CCD Locker
+  type: Open Source
+  for: the Community
+  involvement: [Development]
+  categories: [Tool, Unity, Node]
+  links:
     - name: GitHub
       url: https://github.com/starikcetin/unity-ccd-locker
     - name: NPM
       url: https://www.npmjs.com/package/unity-ccd-locker
-  description:
-    - Git-based locking mechanism preventing simultaneous operations on Unity CCD buckets.
-
-- title: More?
-  links: 
-    - name: My Github
-      url: https://github.com/starikcetin
-  description: |
-    Visit my GitHub profile to see more of my open source work.
+  youtube-id: # TODO
+  description: >
+    Git-based locking mechanism preventing simultaneous operations on Unity CCD buckets.

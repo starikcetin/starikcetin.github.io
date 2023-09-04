@@ -1,36 +1,4 @@
-<section class="about-timeline-section">
+<section>
     <h2>Projects</h2>
-    {%- for project in site.data.projects -%}
-        <h3 class="title">{{ project.title }}</h3>
-
-        {%- assign should-render-details = false -%}
-        {%- capture details-html -%}
-            <ul class="details horizontal-list font-small">
-                {%- if project.size & project.links.size > 0 -%}
-                    {%- assign should-render-details = true -%}
-                    {%- for link in project.links -%}
-                        <li>
-                            <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-                        </li>
-                    {%- endfor -%}
-                {%- endif -%}
-                {%- if project.proprietary == true -%}
-                    {%- assign should-render-details = true -%}
-                    <li>Proprietary</li>
-                {%- endif -%}
-            </ul>
-        {%- endcapture -%}
-        {%- if should-render-details -%}
-            {{- details-html -}}
-        {%- endif -%}
-
-        <ul class="description feather-ul">
-            {%- for project-description-item in project.description -%}
-                <li>
-                    <i data-feather="arrow-right"></i>
-                    {{- project-description-item -}}
-                </li>
-            {%- endfor -%}
-        </ul>
-    {%- endfor -%}
+    <p>See the <a href="{{ '/projects' | absolute_url }}">Projects</a> page for a list of notable projects that I took part in.</p>
 </section>

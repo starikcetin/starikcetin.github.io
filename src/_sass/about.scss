@@ -13,10 +13,10 @@
         width: 10.5rem;
         height: 10.5rem;
         margin-right: 1.5rem;
-        border: pixels(4) solid var(--color-seperator-soft);
+        border: pixels-content(4) solid var(--color-seperator-soft);
         border-radius: 50%;
 
-        @include if-mobile {
+        @include media-max(pixels-media(600)) {
             float: none;
             display: block;
             margin-left: auto;

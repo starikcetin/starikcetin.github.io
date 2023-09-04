@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 blockquote {
-    border-left: pixels(1) solid var(--color-seperator-soft);
+    border-left: pixels-content(1) solid var(--color-seperator-soft);
     padding: 0.75rem 0 0.75rem 1rem;
     margin-left: 1.5rem;
     margin-right: 0;
@@ -120,7 +120,7 @@ blockquote {
         margin-bottom: 0;
     }
 
-    @include if-mobile {
+    @include media-max(pixels-media(600)) {
         margin-left: 0;
     }
 }
@@ -132,7 +132,7 @@ blockquote {
 hr {
     margin: 1.5rem 0;
     border: 0;
-    border-top: pixels(1) solid var(--color-seperator-soft);
+    border-top: pixels-content(1) solid var(--color-seperator-soft);
 }
 
 /* https://stackoverflow.com/a/12642009/6301627 */

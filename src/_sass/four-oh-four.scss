@@ -6,7 +6,7 @@
     img {
         box-sizing: border-box;
         max-width: 100%;
-        border: pixels(4) solid var(--color-seperator-soft);
+        border: pixels-content(4) solid var(--color-seperator-soft);
         border-radius: 2rem;
     }
 
