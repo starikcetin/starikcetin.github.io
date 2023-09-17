@@ -1,0 +1,35 @@
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return math.div($number, $number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function ensure-unit-if-zero($number) {
+    @if type-of($number)=='number' and unitless($number) and $number ==0 {
+        @return 0rem;
+    }
+
+    @return $number;
+}
+
+@function pixels($pixels-value, $base-font-size) {
+    @return math.div(1rem * strip-unit($pixels-value), strip-unit($base-font-size));
+}
+
+@function pixels-content($number) {
+    @return pixels($number, $root-font-size);
+}
+
+@function pixels-media($number) {
+    @return pixels($number, 16px);
+}
+
+@function selector-skip($count) {
+    @return ":nth-child(n+#{$count + 1})";
+}
+
+@function selector-first($count) {
+    @return ":nth-child(-n+#{$count})";
+}

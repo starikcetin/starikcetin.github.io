@@ -1,15 +1,15 @@
-- name: "LinkedIn"
-  url: "https://www.linkedin.com/in/starikcetin"
+- name: LinkedIn
+  url: https://www.linkedin.com/in/starikcetin
   icon: linkedin
 
-- name: "GitHub"
-  url: "https://github.com/starikcetin"
+- name: GitHub
+  url: https://github.com/starikcetin
   icon: github
 
-# - name: "Unity Forum"
-#   url: "https://forum.unity.com/members/starikcetin.1602735"
+# - name: Unity Forum
+#   url: https://forum.unity.com/members/starikcetin.1602735
 #   icon: message-circle
 
-# - name: "Stack Exchange"
-#   url: "https://stackexchange.com/users/7210372/starikcetin"
+# - name: Stack Exchange
+#   url: https://stackexchange.com/users/7210372/starikcetin
 #   icon: layers

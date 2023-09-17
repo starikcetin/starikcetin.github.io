@@ -1,0 +1,22 @@
+//- all dates are resolved in runtime for localization purposes
+//-
+//- Example raw values
+//-   present:             present
+//-   iso:                 2023-09-13T19:48+03:00
+//-   year timezone:       2023 Z+3
+//-   year month timezone: 2023-09 Z+3
+//-   date timezone:       2023-09-13 Z+3
+//-   date time timezone:  2023-09-13 19:48 Z+3
+
+//- outputs a timespan string
+//- raw: parsed with dayjs https://www.npmjs.com/package/dayjs
+//- format: passed to duration https://www.npmjs.com/package/duration
+mixin datetimeSince(raw, format)
+    time.date-template(data-raw=raw, data-type="since", data-format=format)
+
+//- outputs a datetime string
+//- raw: parsed with dayjs https://www.npmjs.com/package/dayjs
+//- format: passed to dayjs https://www.npmjs.com/package/dayjs
+//- if presentPassthrough is true, then raw will be directly used as the output when raw it is "present"
+mixin datetimeExact(raw, format, presentPassthrough=true)
+    time.date-template(data-raw=raw, data-type="exact", data-format=format, data-present-passthrough=presentPassthrough)

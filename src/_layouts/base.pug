@@ -1,0 +1,11 @@
+---
+---
+doctype html
+html(lang="en-US")
+    include /i_head
+    body: .root-container
+        if !noHeader
+            include /i_header
+        .site-main!= content
+        if !noFooter
+            include /i_footer

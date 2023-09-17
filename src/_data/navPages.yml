@@ -1,0 +1,12 @@
+- name: About
+  url: /about
+  rel: author
+
+- name: Projects
+  url: /projects
+
+- name: Tech Blog
+  url: /blog/tech
+
+- name: Life Blog
+  url: /blog/life

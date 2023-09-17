@@ -1,0 +1,19 @@
+include /m_feather
+
+ul.paginator
+    //- if pagination.href.previous
+    //-     li
+    //-         a(rel="prev", href=pagination.href.previous title="Previous Page")
+    //-             +feather("chevron-left")
+
+    each url, num in pagination.hrefs
+        li
+            if num === pagination.pageNumber
+                span.active(title="Current Page")= num + 1
+            else
+                a(href=url, title=`Page ${num + 1}`)= num + 1
+
+    //- if pagination.href.next
+    //-     li
+    //-         a(rel="prev", href=pagination.href.next title="Next Page")
+    //-             +feather("chevron-right")

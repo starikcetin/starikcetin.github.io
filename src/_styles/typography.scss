@@ -1,0 +1,94 @@
+$font-weight-1: 300;
+$font-weight-2: 350;
+$font-weight-3: 400;
+$font-weight-4: 450;
+$font-weight-5: 500;
+
+html {
+    font-size: $root-font-size;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: $font-weight-1;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    font-weight: $font-weight-1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1.75rem 0 0.75rem 0;
+    font-weight: $font-weight-1;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 1.75rem 0 0.75rem 0;
+    font-weight: $font-weight-2;
+}
+
+h4 {
+    font-size: 1.13rem;
+    margin: 1.75rem 0 0.75rem 0;
+    font-weight: $font-weight-3;
+}
+
+h5 {
+    font-size: 0.98rem;
+    margin: 1.75rem 0 0.75rem 0;
+    font-weight: $font-weight-4;
+}
+
+h6 {
+    font-size: 0.833rem;
+    margin: 1.75rem 0 0.75rem 0;
+    font-weight: $font-weight-5;
+}
+
+.font-huge {
+    font-size: calc(1em / 0.75);
+}
+
+.font-large {
+    font-size: calc(1em / 0.875);
+}
+
+.font-small {
+    font-size: calc(1em / 1.2);
+    font-weight: $font-weight-2;
+}
+
+.font-tiny {
+    font-size: calc(1em / 1.5);
+    font-weight: $font-weight-2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    +h1, +h2, +h3, +h4, +h5, +h6 {
+        margin-top: 1rem;
+    }
+}
+
+pre {
+    font-family: 'Inconsolata', monospace;
+}
+
+code {
+    font-family: 'Inconsolata', monospace;
+}
+
+.subtitle {
+    margin: -1.5rem 0 2rem 0;
+    text-align: center;
+}

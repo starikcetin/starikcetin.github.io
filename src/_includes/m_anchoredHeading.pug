@@ -1,0 +1,20 @@
+include /m_feather
+
+mixin anchoredHeading(level, headline)
+    - const id = "/" + uniqueSlugify(level, headline);
+    #{'h' + level}&attributes(attributes)(id=id)
+        if block
+            block
+        else
+            = `${headline} `
+        a.heading-anchor(href=`#${id}`, aria-hidden="true"): +feather("link")
+
+mixin anchoredSpanListHeading(level, listItems, listContainerAttributes, joiner)
+    - const id = "/" + uniqueSlugify(level, listItems, joiner);
+    #{'h' + level}&attributes(attributes)(id=id)
+        - attributes = listContainerAttributes //- hack: overrides the actual attributes
+        span&attributes(attributes)
+            each item in listItems
+                span= item
+        = " "
+        a.heading-anchor(href=`#${id}`, aria-hidden="true"): +feather("link")

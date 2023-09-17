@@ -1,0 +1,13 @@
+include /m_datetime
+
+mixin experienceDetails(experience)
+    if experience.start || experience.end || experience.location || experience.type
+        ul.horizontal-list.details.font-small
+            if experience.start
+                li: +datetimeExact(experience.start, siteConfig.datetimeFormats.monthYear)
+            if experience.end
+                li: +datetimeExact(experience.end, siteConfig.datetimeFormats.monthYear)
+            if experience.location
+                li= experience.location
+            if experience.type
+                li= experience.type

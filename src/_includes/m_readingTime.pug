@@ -1,0 +1,4 @@
+mixin readingTime(content)
+    - const minutes = Math.round(content.split(/\s/g).length / 150)
+    - const suffix = minutes === 1 ? 'minute' : 'minutes'
+    span #{minutes} #{suffix} read

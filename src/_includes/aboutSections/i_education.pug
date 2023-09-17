@@ -1,0 +1,20 @@
+include /m_datetime
+include /m_feather
+include /m_anchoredHeading
+
+section
+    +anchoredHeading(2, "Education")
+    each educationItem in education
+        +anchoredSpanListHeading(3, [educationItem.school, educationItem.title], { class: "horizontal-list-inline" }, "/").title
+        ul.details.horizontal-list.font-small
+            li= educationItem.department
+        ul.details.horizontal-list.font-small
+            li: +datetimeExact(educationItem.start, siteConfig.datetimeFormats.monthYear)
+            li: +datetimeExact(educationItem.end, siteConfig.datetimeFormats.monthYear)
+            li= educationItem.location
+            li= educationItem.grade
+        ul.description.feather-ul
+            each descItem in educationItem.description
+                li
+                    +feather("arrow-right")
+                    = descItem

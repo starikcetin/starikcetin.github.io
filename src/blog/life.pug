@@ -1,0 +1,12 @@
+---
+layout: blog
+title: Life Blog
+pagination:
+    data: collections.lifePost
+    size: 5
+    alias: posts
+    generatePageOnEmptyData: true
+    addAllPagesToCollections: true
+permalink: | 
+    | blog/life/#{pagination.pageNumber > 0 ? `page-${pagination.pageNumber + 1}/` : ''}
+---

@@ -1,23 +1,23 @@
 - company: Albert
   location: Gothenburg, Sweden
   type: Full-time
-  start: April 2022
+  start: 2022-04
   end: Present
   description:
     - Develop educational games for children with Unity targeting iOS and Android.
     - Develop and maintain platform core, internal frameworks, tools, and CI systems.
-  parts-as-details: false
+  positionsAsDetails: false
   positions:
     - title: Unity Team Lead
-      start: December 2022
+      start: 2022-12
       end: Present
       description:
         - Coordinate all teams. Set technical and workflow standards. Supervise monorepo.
         - Prepare and test releases. Optimize size and performance. Fix complex bugs.
 
     - title: Senior Unity Developer
-      start: April 2022
-      end: December 2022
+      start: 2022-04
+      end: 2022-12
       description:
         - Integrate 3rd party SDKs such as Mixpanel, Braze, and Firebase.
         - Work with multiple teams. Ensure technical coordination.
@@ -26,8 +26,8 @@
   location: Ankara, Turkey
   type: Full-time
   title: Senior Unity Developer
-  start: August 2021
-  end: April 2022
+  start: 2021-08
+  end: 2022-04
   description:
     - De-facto tech lead as the only senior developer. Mentor and guide all developers.
     - Develop hypercasual games with Unity for Android. Optimize, build, and publish all games.
@@ -35,24 +35,24 @@
 
 - company: Parabol
   location: Ankara, Turkey
-  start: July 2019
-  end: September 2020
+  start: 2019-07
+  end: 2020-09
   description:
     - Develop ARCitizen, an R&D project for TUBITAK (Scientific and Technological Research Council of Turkey) with Unity and Vuforia targeting Android and iOS.
     - Develop B2G and B2B web apps with React, Angular, and Ionic. Develop open-source web components with Stencil.
-  parts-as-details: true
+  positionsAsDetails: true
   positions:
     - title: Frontend Developer
       type: Full-time
-      start: January 2020
-      end: September 2020
+      start: 2020-01
+      end: 2020-09
 
     - title: Frontend Developer
       type: Part-time
-      start: September 2019
-      end: January 2020
+      start: 2019-09
+      end: 2020-01
 
     - title: Unity Developer
       type: Internship
-      start: July 2019
-      end: August 2019
+      start: 2019-07
+      end: 2019-08

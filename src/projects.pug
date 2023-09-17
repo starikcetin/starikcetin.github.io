@@ -1,0 +1,56 @@
+---
+layout: base
+title: Projects
+dates:
+    published: "2023-09-11 20:00 Z+3"
+    modified: "2023-09-11 20:00 Z+3"
+tags:
+    - sitemapInclude
+pagination:
+    data: projects
+    size: 9
+    alias: pageItems
+    generatePageOnEmptyData: true
+    addAllPagesToCollections: true
+permalink: |
+    | projects/#{pagination.pageNumber > 0 ? `page-${pagination.pageNumber + 1}/` : ''}
+---
+include /m_youtubeEmbed
+include /m_feather
+include /m_anchoredHeading
+
+article.projects
+    header
+        h1 Projects
+        .subtitle: p This page contains notable projects that I took part in.
+        if pagination.hrefs.length > 1
+            include /i_paginator
+
+    .items-container
+        each projectItem in pageItems
+            section.item
+                h2.name: a(href=_.factory.projectLink(projectItem.name))= projectItem.name
+                ul.details
+                    li= projectItem.type
+                    li= projectItem.for
+                    each linkItem in projectItem.links
+                        li: a(href=linkItem.url target="_blank")= linkItem.name
+                ul.categories
+                    each categoryItem in projectItem.categories
+                        li= categoryItem
+                if projectItem.youtubeId
+                    .media
+                        .placeholder
+                            +feather("film")
+                            span Loading
+                        +youtubeEmbed(projectItem.youtubeId)
+                if projectItem.description
+                    p.description= projectItem.description
+                p.involvement
+                    span Involvement:
+                    each involvementItem in projectItem.involvement
+                        span= involvementItem
+
+    if pagination.hrefs.length > 1
+        footer
+            include /i_paginator

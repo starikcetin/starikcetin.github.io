@@ -1,0 +1,78 @@
+.site-header {
+    $breakpoint: pixels-media(650);
+
+    @include plain-anchor;
+    border-bottom: pixels-content(1) solid var(--color-seperator-soft);
+
+    nav {
+        @include wrapper;
+        @include flex(row);
+        justify-content: space-between;
+        align-items: baseline;
+
+        @include media-max($breakpoint) {
+            @include flex(column);
+            align-items: center;
+        }
+
+        .nav-list {
+            @include horizontal-list($seperator-width: 2em);
+            margin: 0;
+
+            @include media-max($breakpoint) {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.site-main {
+    @include flex(column);
+    flex-grow: 1;
+    
+    .wrapper {
+        @include flex(column);
+        @include wrapper;
+        flex-grow: 1;
+
+        &.verticalCenter {
+            justify-content: center;
+        }
+
+        &.narrow {
+            @include wrapper($content-width: pixels-content(600));
+        }
+    }
+}
+
+.site-footer {
+    @include plain-anchor;
+
+    &:not(.no-seperate) {
+        border-top: pixels-content(1) solid var(--color-seperator-soft);
+    }
+
+    .content {
+        @include wrapper;
+        @include flex(column, $row-gap: 1rem);
+        justify-content: center;
+        align-items: center;
+
+        .around-the-web-list {
+            @include horizontal-list($seperator-width: 1.5em);
+            margin: 0;
+            justify-content: center;
+        }
+
+        .utility-list {
+            @include horizontal-list($seperator-width: 1.5em);
+            margin: 0;
+            justify-content: center;
+        }
+
+        .copyright {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

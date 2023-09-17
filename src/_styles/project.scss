@@ -1,0 +1,49 @@
+.project {
+    .name {
+        &:not(:first-child) {
+            margin-top: 2.5rem;
+        }
+    }
+
+    .details {
+        @include horizontal-list($seperator-width: 1em);
+    }
+
+    .categories {
+        @include horizontal-list($seperator-width: 1em);
+    }
+
+    .media {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        max-width: pixels-content(600);
+        position: relative;
+
+        iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .placeholder {
+            @include flex(column, $row-gap: 0.25em);
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .feather {
+                width: 2em;
+                height: 2em;
+                stroke-width: 1;
+            }
+        }
+    }
+
+    .involvement {
+        @include horizontal-list($seperator-width: 1em, $skip: 1);
+    }
+}

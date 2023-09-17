@@ -8,8 +8,10 @@
       url: https://play.google.com/store/apps/details?id=se.mralbert.junior
     - name: App Store
       url: https://apps.apple.com/no/app/albert-junior/id1486597368
-  youtube-id: fo1ILA-yikk
+  youtubeId: fo1ILA-yikk
   description: # TODO
+  dataDates:
+    modified: "1997-01-01 Z+3"
 
 - name: 8 Puzzle
   type: School Project
@@ -21,7 +23,7 @@
       url: https://github.com/starikcetin/8-puzzle
     - name: Website
       url: https://starikcetin.github.io/8-puzzle
-  youtube-id: XPpebuDhdXM
+  youtubeId: XPpebuDhdXM
   description: # TODO
 
 - name: Blockchain Technology Education Software
@@ -32,7 +34,7 @@
   links:
     - name: GitHub
       url: https://github.com/ctisbtes/btes
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
 
@@ -46,7 +48,7 @@
       url: https://github.com/starikcetin/computer-graphics-final
     - name: Download
       url: https://github.com/starikcetin/computer-graphics-final/releases/tag/build
-  youtube-id: KMD9lkEcwl8
+  youtubeId: KMD9lkEcwl8
   description: # TODO
 
 - name: Guess the Number
@@ -59,7 +61,7 @@
       url: https://github.com/starikcetin/ctis487-term-project
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.starikcetin.ctis487.guessthenumber
-  youtube-id: o14L_kNbGyk
+  youtubeId: o14L_kNbGyk
   description: # TODO
 
 - name: Technical Math Projects
@@ -72,7 +74,7 @@
       url: https://github.com/starikcetin/technical-math-projects
     - name: Download
       url: https://github.com/starikcetin/technical-math-projects/releases/tag/builds
-  youtube-id: TvdwiwdOOVk
+  youtubeId: TvdwiwdOOVk
   description: # TODO
 
 - name: Hexfall Clone
@@ -85,7 +87,7 @@
       url: https://github.com/starikcetin/hexfall-clone
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.starikcetin.hexfallClone
-  youtube-id: kYdHKUxCctw
+  youtubeId: kYdHKUxCctw
   description: # TODO
 
 - name: Space Invaders Clone
@@ -98,7 +100,7 @@
       url: https://github.com/starikcetin/space-invaders-clone
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.starikcetin.spaceinvaders
-  youtube-id: UAQnx0tBGQY
+  youtubeId: UAQnx0tBGQY
   description: # TODO
 
 - name: Best Painter
@@ -109,7 +111,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.bestpainter
-  youtube-id: 3WbGQjwfScU
+  youtubeId: 3WbGQjwfScU
   description: # TODO
 
 - name: Bracelet Run
@@ -120,7 +122,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.braceletrun
-  youtube-id: N8jgqYt-B3Q
+  youtubeId: N8jgqYt-B3Q
   description: # TODO
 
 - name: Car Wash Run
@@ -131,7 +133,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.carwashrun
-  youtube-id: 7fkrnVPxslw
+  youtubeId: 7fkrnVPxslw
   description: # TODO
 
 - name: Church Life 3D
@@ -142,7 +144,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.churchlife3d
-  youtube-id: Jh7OU-Swvl8
+  youtubeId: Jh7OU-Swvl8
   description: # TODO
 
 - name: Feet Runner
@@ -153,7 +155,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.feetrunner3d
-  youtube-id: 0ahSaYObaW4
+  youtubeId: 0ahSaYObaW4
   description: # TODO
 
 - name: Hold My Hand
@@ -164,7 +166,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.holdmyhand
-  youtube-id: 6A7B1Or_ydo
+  youtubeId: 6A7B1Or_ydo
   description: # TODO
 
 - name: Hospital Run 3D
@@ -175,7 +177,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.hospitalrun
-  youtube-id: uvEjSWLJFm8
+  youtubeId: uvEjSWLJFm8
   description: # TODO
 
 - name: Ice Cream Stack
@@ -186,7 +188,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.icecreamstack
-  youtube-id: z75JahNZJeQ
+  youtubeId: z75JahNZJeQ
   description: # TODO
 
 - name: Judgement Run
@@ -199,7 +201,7 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.judgementrun
     - name: Google Play (Run and Judge)
       url: https://play.google.com/store/apps/details?id=com.easyclap.runandjudge
-  youtube-id: dzN_S5_m7UU
+  youtubeId: dzN_S5_m7UU
   description: # TODO
 
 - name: Luggage Rush
@@ -210,7 +212,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.luggagerush
-  youtube-id: 6IecOEre9aE
+  youtubeId: 6IecOEre9aE
   description: # TODO
 
 - name: Merge Puzzle 3D
@@ -221,7 +223,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.mergepuzzle3d
-  youtube-id: AzAizo41JSc
+  youtubeId: AzAizo41JSc
   description: # TODO
 
 - name: Muscle Ball 3D
@@ -232,7 +234,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.musclefootball3d
-  youtube-id: -uik1EdOczc
+  youtubeId: -uik1EdOczc
   description: # TODO
 
 - name: Powder Paint
@@ -243,7 +245,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.powderpaint
-  youtube-id: hY6ATvFr99g
+  youtubeId: hY6ATvFr99g
   description: # TODO
 
 - name: Presidency Run 3D
@@ -254,7 +256,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.presidencyrun3d
-  youtube-id: Av708WXAd8k
+  youtubeId: Av708WXAd8k
   description: # TODO
 
 - name: Psychologist 3D
@@ -265,7 +267,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.psychologist3d
-  youtube-id: d3YVStN9Te4
+  youtubeId: d3YVStN9Te4
   description: # TODO
 
 - name: School Run 3D
@@ -276,7 +278,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.schoolrun3d
-  youtube-id: v8oNtb732NY
+  youtubeId: v8oNtb732NY
   description: # TODO
 
 - name: Snake Rush 3D
@@ -287,7 +289,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.snakerush3d
-  youtube-id: pdmpobXmlOE
+  youtubeId: pdmpobXmlOE
   description: # TODO
 
 - name: Stack Coaster
@@ -298,7 +300,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.stackcoaster
-  youtube-id: ponOaqOGFq8
+  youtubeId: ponOaqOGFq8
   description: # TODO
 
 - name: Stuck In Sims
@@ -309,7 +311,7 @@
   links:
     - name: Website
       url: https://globalgamejam.org/2022/games/stuck-sims-5
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: # TODO
 
 - name: Sugarcane Juice Making
@@ -320,7 +322,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.sugarcanejuicer
-  youtube-id: 4qz-EOfA934
+  youtubeId: 4qz-EOfA934
   description: # TODO
 
 - name: Table Football Run
@@ -331,7 +333,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.tablefootballrun
-  youtube-id: p_MlNB0M9Hw
+  youtubeId: p_MlNB0M9Hw
   description: # TODO
 
 - name: Theme Park Dude
@@ -342,7 +344,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.themeparkdude
-  youtube-id: wzehr6UpEtk
+  youtubeId: wzehr6UpEtk
   description: # TODO
 
 - name: Tire Jump
@@ -353,7 +355,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.tirejump
-  youtube-id: JqCbvuvxKVw
+  youtubeId: JqCbvuvxKVw
   description: # TODO
 
 - name: Toy Crane Run
@@ -364,7 +366,7 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.toycranerun
-  youtube-id: 0y-AShl6YRA
+  youtubeId: 0y-AShl6YRA
   description: # TODO
 
 - name: Wide President
@@ -375,10 +377,10 @@
   links:
     - name: Google Play
       url: https://play.google.com/store/apps/details?id=com.easyclap.widepresident
-  youtube-id: Q7CZcNein8o
+  youtubeId: Q7CZcNein8o
   description: # TODO
 
-- name: [Word Dice Pro, Word Dice 3D]
+- name: Word Dice
   type: Proprietary
   for: Easy Clap Games
   involvement: [Development, Project Management, Leadership]
@@ -388,7 +390,7 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.worddicepro
     - name: Google Play (Word Dice 3D)
       url: https://play.google.com/store/apps/details?id=com.easyclap.worddice
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: # TODO
 
 - name: BindingsRx TextMeshPro
@@ -401,7 +403,7 @@
       url: https://github.com/starikcetin/BindingsRx-TextMeshPro
     - name: OpenUPM
       url: https://openupm.com/packages/com.starikcetin.bindingsrx-textmeshpro
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Unity plugin implementing BindingsRx support for TextMeshPro.
 
@@ -415,7 +417,7 @@
       url: https://github.com/starikcetin/Eflatun.SceneReference
     - name: OpenUPM
       url: https://openupm.com/packages/com.eflatun.scenereference
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
 
@@ -429,7 +431,7 @@
       url: https://github.com/starikcetin/git-upm-publisher-2
     - name: NPM
       url: https://www.npmjs.com/package/git-upm-publisher
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Automates UPM package releases for Git repositories containing Unity plugins.
 
@@ -443,7 +445,7 @@
       url: https://github.com/starikcetin/Learning-Unity-ECS
     - name: GitHub (2nd repo)
       url: https://github.com/starikcetin/Learning-Unity-ECS-2
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Educational repositories with several small projects using the new ECS and Job System of Unity.
 
@@ -457,7 +459,7 @@
       url: https://github.com/starikcetin/Quick-Play-Tool
     - name: OpenUPM
       url: https://openupm.com/packages/com.starikcetin.quickplaytool
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
 
@@ -471,6 +473,6 @@
       url: https://github.com/starikcetin/unity-ccd-locker
     - name: NPM
       url: https://www.npmjs.com/package/unity-ccd-locker
-  youtube-id: # TODO
+  youtubeId: # TODO
   description: >
     Git-based locking mechanism preventing simultaneous operations on Unity CCD buckets.

@@ -1,0 +1,12 @@
+---
+layout: blog
+title: Tech Blog
+pagination:
+    data: collections.techPost
+    size: 5
+    alias: posts
+    generatePageOnEmptyData: true
+    addAllPagesToCollections: true
+permalink: | 
+    | blog/tech/#{pagination.pageNumber > 0 ? `page-${pagination.pageNumber + 1}/` : ''}
+---

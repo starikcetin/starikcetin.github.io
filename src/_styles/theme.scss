@@ -1,0 +1,45 @@
+html {
+    @include if-light-theme($resolve-auto: true) {
+        @import "syntax-light";
+
+        --color-background: hsl(240, 23%, 95%);
+        --color-background-code-block: hsl(240, 23%, 94%);
+        --color-background-code-inline: hsl(240, 23%, 91%);
+        --color-text: hsl(0, 0%, 0%);
+    
+        --color-seperator-soft: hsl(240, 12%, 80%);
+        --color-seperator-hard: hsl(240, 12%, 50%);
+    
+        --color-link-unvisited: hsl(240, 100%, 50%);
+        --color-link-visited: hsl(240, 100%, 50%);
+        --color-link-hover: hsl(240, 100%, 50%);
+        --color-link-active: hsl(240, 100%, 77%);
+    
+        --color-plain-link-unvisited: hsl(0, 0%, 0%);
+        --color-plain-link-visited: hsl(0, 0%, 0%);
+        --color-plain-link-hover: hsl(240, 100%, 50%);
+        --color-plain-link-active: hsl(240, 100%, 77%);
+    }
+
+    @include if-dark-theme($resolve-auto: true) {
+        @import "syntax-dark";
+
+        --color-background: hsl(250, 23%, 5%);
+        --color-background-code-block: hsl(250, 23%, 8%);
+        --color-background-code-inline: hsl(250, 23%, 12%);
+        --color-text: hsl(0, 0%, 80%);
+    
+        --color-seperator-soft: hsl(250, 12%, 20%);
+        --color-seperator-hard: hsl(250, 12%, 50%);
+    
+        --color-link-unvisited: hsl(120, 88%, 50%);
+        --color-link-visited: hsl(120, 88%, 50%);
+        --color-link-hover: hsl(120, 88%, 50%);
+        --color-link-active: hsl(120, 88%, 33%);
+    
+        --color-plain-link-unvisited: hsl(0, 0%, 80%);
+        --color-plain-link-visited: hsl(0, 0%, 80%);
+        --color-plain-link-hover: hsl(120, 88%, 50%);
+        --color-plain-link-active: hsl(120, 88%, 33%);
+    }
+}

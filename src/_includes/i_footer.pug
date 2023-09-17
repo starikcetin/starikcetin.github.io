@@ -1,0 +1,17 @@
+include /m_feather
+
+footer.site-footer(class=footerOptions && footerOptions.noSeperate && "no-seperate"): .content
+    if !(footerOptions && footerOptions.noSocials)
+        include /i_socials
+    if !(footerOptions && footerOptions.noUtils)
+        ul.utility-list
+            li: a(rel="alternate" href="/feed.xml")
+                +feather("rss", "gap-right")
+                | Feed
+            li: a(rel="sitemap" href="/sitemap.xml")
+                +feather("zap", "gap-right")
+                | Sitemap
+            li
+                include /i_themeSelector
+    if !(footerOptions && footerOptions.noCopyright)
+        p.copyright.font-small &copy; #{siteConfig.author.name}

@@ -1,0 +1,17 @@
+---
+layout: wrapped
+---
+include /m_readingTime
+include /m_datetime
+
+article.post
+    header.post-header
+        h1= title
+        .subtitle: ul.details.font-small
+            li: +datetimeExact(dates.published, siteConfig.datetimeFormats.dateOnly)
+            if _.hasValue(dates.modified)
+                li: span Updated #[+datetimeExact(dates.modified, siteConfig.datetimeFormats.dateOnly)]
+            li: +readingTime(content)
+    != content
+    footer
+        include /i_commentSection

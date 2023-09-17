@@ -1,0 +1,40 @@
+---
+permalink: "feed.xml"
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+---
+- const items = collections.feedInclude;
+
+doctype xml
+feed(xmlns="http://www.w3.org/2005/Atom" xml:base=siteConfig.baseUrl)
+    generator(uri="https://www.11ty.dev/" version=eleventy.version)
+    title= siteConfig.title
+    subtitle= siteConfig.description
+    link(href=_.absoluteUrl(permalink), rel="self")
+    link(href=siteConfig.baseUrl, rel="alternate")
+
+    - const newestModifiedOrPublishedDate = _.dayjs.fromCollection.modifiedOrPublished.newest(items)?.toRfc3339();
+    if _.hasValue(newestModifiedOrPublishedDate)
+        updated= newestModifiedOrPublishedDate
+
+    published= _.dayjs.fromCollection.published.oldest(items).toRfc3339()
+    id= siteConfig.baseUrl
+    author: name= siteConfig.author.name
+
+    each post in _.dayjs.sortCollection.byPublished(items)
+        - const postAbsoluteUrl = _.absoluteUrl(post.url);
+        entry
+            title= post.data.title
+            link(href=postAbsoluteUrl)
+
+            - const modifiedDate = _.dayjs.fromPage.modified(post)?.toRfc3339();
+            if _.hasValue(modifiedDate)
+                updated= modifiedDate
+
+            published= _.dayjs.fromPage.published(post).toRfc3339()
+            id= postAbsoluteUrl
+
+            - const content = _.htmlToAbsoluteUrls(post.templateContent, postAbsoluteUrl, { sync: true });
+            content(xml:lang="en", type="html")= content
+
+            author: name= siteConfig.author.name

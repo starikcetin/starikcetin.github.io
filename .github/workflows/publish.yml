@@ -23,26 +23,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1.152.0
+      - uses: actions/setup-node@v3
         with:
-          bundler-cache: true
-          cache-version: 0
+          node-version-file: '.nvmrc'
 
-      - name: Setup Pages
-        id: pages
+      - id: pages
         uses: actions/configure-pages@v3
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+      - run: npm ci
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - run: npm run build:prod
+
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: "dist/"
 

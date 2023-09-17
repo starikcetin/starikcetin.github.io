@@ -1,0 +1,18 @@
+include /m_datetime
+include /m_feather
+include /m_anchoredHeading
+
+section
+    +anchoredHeading(2, "Awards")
+    each awardItem in awards
+        +anchoredHeading(3, awardItem.title).title
+        ul.details.horizontal-list.font-small
+            if awardItem.date
+                li: +datetimeExact(awardItem.date, siteConfig.datetimeFormats.monthYear)
+            if awardItem.issuer
+                li Issued by #{awardItem.issuer}
+        ul.description.feather-ul
+            each descItem in awardItem.description
+                li
+                    +feather("arrow-right")
+                    = descItem

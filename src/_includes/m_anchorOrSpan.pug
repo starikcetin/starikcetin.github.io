@@ -1,0 +1,5 @@
+mixin anchorOrSpan(contnet, url)
+    if url && url.length > 0
+        a(href=url)= content
+    else
+        span= content

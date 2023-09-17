@@ -1,0 +1,8 @@
+//- gap can be "gap-none", "gap-left", "gap-right", or "gap-both"
+mixin feather(icon, gap="gap-none")
+    span.feather-container&attributes(attributes)
+        if ["gap-left", "gap-both"].includes(gap)
+            = " "
+        i(data-feather=icon)
+        if ["gap-right", "gap-both"].includes(gap)
+            = " "

@@ -1,0 +1,9 @@
+.post {
+    .post-header {
+        .details {
+            @include horizontal-list($seperator-width: 1.5em);
+            justify-content: center;
+            margin: 0;
+        }
+    }
+}

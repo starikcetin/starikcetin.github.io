@@ -1,0 +1,17 @@
+.home {
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .nav-list {
+        @include horizontal-list($seperator-width: 1.5em);
+        justify-content: center;
+        margin: 1rem 0;
+    }
+}

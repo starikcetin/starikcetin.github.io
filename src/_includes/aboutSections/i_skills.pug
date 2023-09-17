@@ -1,0 +1,16 @@
+include /m_datetime
+include /m_feather
+include /m_anchoredHeading
+
+section.about-timeline-section
+    +anchoredHeading(2, "Skills")
+    each skillItem in skills
+        +anchoredHeading(3, skillItem.title).title
+        ul.details.horizontal-list.font-small
+            li: span Total experience #[+datetimeSince(skillItem.since, siteConfig.timespanFormats.years)]+ years
+            li: span See #[a(href="#experience") Experience] for professional-only
+        ul.description.feather-ul
+            each descriptionItem in skillItem.description
+                li
+                    +feather("arrow-right")
+                    = descriptionItem

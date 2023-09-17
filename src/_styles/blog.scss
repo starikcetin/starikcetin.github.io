@@ -1,0 +1,30 @@
+.blog {
+    flex-grow: 1;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    footer {
+        .paginator {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .details {
+        @include horizontal-list($seperator-width: 1.5em);
+        margin: 0.5rem 0;
+    }
+
+    .excerpt {
+        margin-bottom: 0;
+    }
+
+    .empty-blog-text {
+        text-align: center;
+    }
+}

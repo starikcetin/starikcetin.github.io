@@ -1,0 +1,19 @@
+---
+permalink: "sitemap.xml"
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+---
+- const items = collections.sitemapInclude;
+
+doctype xml
+urlset(xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance",
+       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9",
+       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd")
+
+    each item in _.dayjs.sortCollection.byModifiedOrPublished(items)
+        url
+            loc!= _.absoluteUrl(item.url)
+
+            - const modifiedOrPublishedDate = _.dayjs.fromPage.modifiedOrPublished(item)?.toW3C();
+            if _.hasValue(modifiedOrPublishedDate)
+                lastmod= modifiedOrPublishedDate

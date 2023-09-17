@@ -1,0 +1,10 @@
+include /m_feather
+
+ul.around-the-web-list
+    each social in socials
+        li: a(rel="me" target="_blank" href=social.url) 
+            +feather(social.icon, "gap-right")
+            = social.name
+    li: button.imitate-link.email-trigger(data-name=siteConfig.author.email.name data-domain=siteConfig.author.email.domain)
+        +feather("mail", "gap-right")
+        | Email

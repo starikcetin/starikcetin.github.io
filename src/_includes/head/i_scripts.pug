@@ -1,0 +1,8 @@
+//- Make siteConfig available to the runtime JS
+script(type='text/javascript').
+    const siteConfig = JSON.parse('!{JSON.stringify(siteConfig)}');
+
+script(type='text/javascript' src='/scripts/main.js')
+
+if siteConfig.deployEnv === "prod"
+    script(async, src=`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalytics}`)

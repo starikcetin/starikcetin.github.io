@@ -1,0 +1,20 @@
+---
+layout: wrapped
+wrapOptions:
+    verticalCenter: true
+    narrow: true
+title: Home
+noHeader: true
+footerOptions:
+    noSeperate: true
+dates:
+    published: "2023-09-11 20:00 Z+3"
+    modified: "2023-09-11 20:00 Z+3"
+tags:
+    - sitemapInclude
+---
+.home
+    h1= siteConfig.title
+    nav.font-large
+        include /i_nav
+    p= siteConfig.description

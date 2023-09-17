@@ -1,0 +1,21 @@
+---
+---
+- const title = `Privacy Policy of ${name}`
+head
+    title #{title}
+body
+    h1 #{title}
+    - const lastUpdateFormatted = _.dayjs.sane(lastUpdate).format("YYYY-MM-DD HH:mm UTCZ");
+    p Updated #{lastUpdateFormatted}
+    hr
+    p #{name} #{type} collects no private data at all. Your data will not be used in any way, because we don't have it.
+    p If you have any questions, please contact us below.
+    p Contact: #[button#email-trigger Reveal]
+
+    script.
+        document.getElementById("email-trigger").onclick = function() {
+            const name="#{email.name}";
+            const domain="#{email.domain}";
+            const subject="Contact from #{title}";
+            this.outerHTML = "<a href=\"mailto:" + name + "@" + domain + "?subject=" + subject + "\">" + name + "@" + domain + "</a>";
+        }

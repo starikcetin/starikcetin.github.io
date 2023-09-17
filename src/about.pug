@@ -1,0 +1,22 @@
+---
+layout: wrapped
+title: About
+isArticle: true
+dates:
+    published: "2023-09-11 20:00 Z+3"
+    modified: "2023-09-11 20:00 Z+3"
+tags:
+    - sitemapInclude
+---
+include /m_datetime
+
+article.about
+    header
+        h1 About
+        p.subtitle.font-small Updated #[+datetimeExact(_.dayjs.fromDates.modifiedOrPublished(dates), siteConfig.datetimeFormats.dateOnly)]
+    include /aboutSections/i_me
+    include /aboutSections/i_skills
+    include /aboutSections/i_experience
+    include /aboutSections/i_education
+    include /aboutSections/i_awards
+    include /aboutSections/i_projects
