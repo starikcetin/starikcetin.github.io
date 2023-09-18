@@ -49,17 +49,11 @@ export function onLoad() {
     };
 
     for (const themeSelector of themeSelectors) {
-        const trigger = themeSelector.querySelector('.trigger');
         const menu = themeSelector.querySelector('.menu');
         const options = menu.querySelectorAll('[data-option]');
 
-        trigger.addEventListener('click', () => {
-            menu.classList.toggle('visible');
-        });
-
         for (const option of options) {
             option.addEventListener('click', () => {
-                menu.classList.remove('visible');
                 setTheme(option.dataset.option);
             });
         }

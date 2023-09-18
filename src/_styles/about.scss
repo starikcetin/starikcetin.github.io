@@ -16,7 +16,7 @@
         border: pixels-content(4) solid var(--color-seperator-soft);
         border-radius: 50%;
 
-        @include media-max(pixels-media(600)) {
+        @include media-smaller-than(pixels-media(600)) {
             float: none;
             display: block;
             margin-left: auto;

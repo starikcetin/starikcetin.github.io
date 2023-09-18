@@ -1,12 +1,14 @@
 include /m_feather
 
+- const themeSelectorId = _.uniqueId();
+
 div.theme-selector
-    button.trigger.imitate-link
+    button.imitate-link.trigger(data-visibility-trigger-for=`#${themeSelectorId}`)
         +feather("monitor", "gap-right").icon-auto
         +feather("moon", "gap-right").icon-dark
         +feather("sun", "gap-right").icon-light
         | Theme
-    ul.menu
-        li(data-option="auto") #[+feather("monitor", "gap-right")] System
-        li(data-option="dark") #[+feather("moon", "gap-right")] Dark
-        li(data-option="light") #[+feather("sun", "gap-right")] Light
+    ul.menu(id=themeSelectorId)
+        li(data-visibility-trigger-for=`#${themeSelectorId}`, data-option="auto") #[+feather("monitor", "gap-right")] System
+        li(data-visibility-trigger-for=`#${themeSelectorId}`, data-option="dark") #[+feather("moon", "gap-right")] Dark
+        li(data-visibility-trigger-for=`#${themeSelectorId}`, data-option="light") #[+feather("sun", "gap-right")] Light

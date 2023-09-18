@@ -1,3 +1,13 @@
+include /m_feather
+
+- const navListId = _.uniqueId();
+
 header.site-header: nav
-  a.font-huge(rel="home" href="/") #{siteConfig.title}
-  include /i_nav
+    a.font-huge(rel="home" href="/") #{siteConfig.title}
+    .nav-list(id=navListId)
+        each pageItem in navPages
+            a(href=pageItem.url rel=pageItem.rel) #{pageItem.name}
+    button.imitate-link.nav-trigger(data-visibility-trigger-for=`#${navListId}`)
+        +feather('menu', "gap-right").icon-open
+        +feather('x', "gap-right").icon-close
+        | Pages

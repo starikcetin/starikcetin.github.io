@@ -7,6 +7,7 @@ const absoluteUrl = require("./scripts/absoluteUrl.js");
 const utils = require("./scripts/utils.js");
 const slugify = require("./scripts/custom-slugify.js");
 const factory = require("./scripts/factory.js");
+const uniqueId = require("./scripts/uniqueId.js");
 
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
@@ -104,6 +105,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/**");
   eleventyConfig.addWatchTarget("./*.js");
 
+  eleventyConfig.setServerOptions({
+    domDiff: false,
+    watch: ["./src/**", "./*.js"],
+    showAllHosts: true,
+
+  });
+
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--excerpt-->",
@@ -120,6 +128,7 @@ module.exports = function (eleventyConfig) {
     htmlToAbsoluteUrls: htmlToAbsoluteUrlsSync,
     ordinal,
     factory,
+    uniqueId,
   };
 
   eleventyConfig.setPugOptions({

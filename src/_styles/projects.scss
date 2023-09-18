@@ -12,22 +12,22 @@
     }
 
     .items-container {
-        @include media-min($two-col-breakpoint) {
+        @include media-larger-than($two-col-breakpoint) {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 1rem;
         }
 
-        @include media-max($three-col-breakpoint) {
+        @include media-smaller-than($three-col-breakpoint) {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        @include media-max($two-col-breakpoint) {
+        @include media-smaller-than($two-col-breakpoint) {
             grid-template-columns: minmax(0, 1fr);
         }
 
         .item {
-            @include media-min($two-col-breakpoint) {
+            @include media-larger-than($two-col-breakpoint) {
                 box-sizing: border-box;
                 border: pixels-content(1) solid var(--color-seperator-soft);
                 padding: 1.5rem;
@@ -42,11 +42,11 @@
             }
 
             .name {
-                @include media-min($two-col-breakpoint) {
+                @include media-larger-than($two-col-breakpoint) {
                     text-align: center;
                 }
 
-                @include media-max($two-col-breakpoint) {
+                @include media-smaller-than($two-col-breakpoint) {
                     &:not(:first-child) {
                         margin-top: 2.5rem;
                     }
@@ -64,16 +64,16 @@
             .details {
                 @include horizontal-list($seperator-width: 1em);
 
-                @include media-min($two-col-breakpoint) {
-                    justify-content: center;
+                @include media-larger-than($two-col-breakpoint) {
+                    text-align: center;
                 }
             }
 
             .categories {
                 @include horizontal-list($seperator-width: 1em);
 
-                @include media-min($two-col-breakpoint) {
-                    justify-content: center;
+                @include media-larger-than($two-col-breakpoint) {
+                    text-align: center;
                 }
             }
 
@@ -83,7 +83,7 @@
                 max-width: pixels-content(600);
                 position: relative;
 
-                @include media-min($two-col-breakpoint) {
+                @include media-larger-than($two-col-breakpoint) {
                     margin-left: auto;
                     margin-right: auto;
                 }

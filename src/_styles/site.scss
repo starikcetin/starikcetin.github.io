@@ -9,18 +9,64 @@
         @include flex(row);
         justify-content: space-between;
         align-items: baseline;
+        flex-wrap: wrap;
 
-        @include media-max($breakpoint) {
-            @include flex(column);
+        @include media-smaller-than($breakpoint) {
             align-items: center;
         }
 
-        .nav-list {
-            @include horizontal-list($seperator-width: 2em);
-            margin: 0;
+        .nav-trigger{
+            display: none;
 
-            @include media-max($breakpoint) {
-                margin-top: 1rem;
+            @include media-smaller-than($breakpoint) {
+                display: block;
+            }
+
+            .icon-open {
+                display: inline;
+            }
+
+            .icon-close {
+                display: none;
+            }
+        }
+
+        .nav-list {
+            order: 999;
+
+            @include media-larger-than($breakpoint) {
+                @include horizontal-list($seperator-width: 1.5em);
+                text-align: center;
+                margin: 0;
+            }
+
+            @include media-smaller-than($breakpoint) {
+                @include flex(column);
+                display: none;
+                margin-top: 0.5rem;
+                margin-bottom: -0.5rem;
+                flex: 100%;
+                align-items: stretch;
+                text-align: right;
+                
+                a {
+                    padding: 0.5rem 0;
+                }
+
+                &.visible {
+                    display: flex;
+
+                    &~.nav-trigger {
+
+                        .icon-open {
+                            display: none;
+                        }
+
+                        .icon-close {
+                            display: inline;
+                        }
+                    }
+                }
             }
         }
     }
@@ -60,14 +106,14 @@
 
         .around-the-web-list {
             @include horizontal-list($seperator-width: 1.5em);
+            text-align: center;
             margin: 0;
-            justify-content: center;
         }
 
         .utility-list {
             @include horizontal-list($seperator-width: 1.5em);
+            text-align: center;
             margin: 0;
-            justify-content: center;
         }
 
         .copyright {

@@ -10,8 +10,23 @@
     }
 
     .nav-list {
-        @include horizontal-list($seperator-width: 1.5em);
-        justify-content: center;
+        $breakpoint: pixels-media(500);
         margin: 1rem 0;
+
+        @include media-larger-than($breakpoint) {
+            @include horizontal-list($seperator-width: 1.5em);
+            text-align: center;
+        }
+
+        @include media-smaller-than($breakpoint) {
+            $horizontal-gap: 1rem;
+            @include flex(row, $row-gap: 1rem, $column-gap: $horizontal-gap);
+            flex-wrap: wrap;
+
+            a {
+                display: block;
+                flex: calc(50% - $horizontal-gap);
+            }
+        }
     }
 }

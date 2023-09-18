@@ -5,7 +5,7 @@ body {
 
 .root-container {
     @include flex(column);
-    min-height: 100vh;
+    @include support-fallback(min-height, 100dvh, 100vh);
 }
 
 a {
@@ -89,6 +89,8 @@ table:not(.rouge-table) {
         display: none;
         position: absolute;
         bottom: calc(100% + 0.25rem);
+        left: 50%;
+        transform: translateX(-50%);
         width: max-content;
         z-index: 1;
         background-color: var(--color-background);
@@ -203,7 +205,7 @@ blockquote {
         margin-bottom: 0;
     }
 
-    @include media-max(pixels-media(600)) {
+    @include media-smaller-than(pixels-media(600)) {
         margin-left: 0;
     }
 }
@@ -254,7 +256,7 @@ input[type=submit] {
 
 .paginator {
     @include horizontal-list($seperator-width: 3rem);
-    justify-content: center;
+    text-align: center;
     margin: 2rem 0;
     padding: 0;
 }

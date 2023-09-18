@@ -1,3 +1,9 @@
+@mixin unimportant() {
+    :where(&) {
+        @content;
+    }
+}
+
 @mixin plain-anchor {
     a {
         cursor: pointer;
@@ -72,25 +78,33 @@
 }
 
 @mixin horizontal-list($seperator-width, $child-selector: "> *", $inline: false, $skip: 0) {
-    @include flex(row, $inline: $inline);
     padding: 0;
-    list-style: none;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 0;
+
+    @if $inline {
+        display: inline;
+    } @else {
+        display: block;
+    }
 
     #{$child-selector} {
-        @include flex(row);
+        display: inline;
 
-        &:not(:last-child) {
-            margin-right: math.div($seperator-width, 2);
+        &#{selector-skip($skip + 1)}:before {
+            content: "\0020\2022\0020";
+            color: var(--color-seperator-hard);
+            word-spacing: math.div($seperator-width, 4);
+            white-space: nowrap;
         }
 
-        &#{selector-skip($skip + 1)} {
-            &:before {
-                margin-right: math.div($seperator-width, 2);
-                content: "\2022";
-                color: var(--color-seperator-hard);
-                text-align: center;
+        &#{selector-first($skip)}:after {
+            content: "\0020";
+            word-spacing: math.div($seperator-width, 2);
+        }
+
+        > * {
+            @include unimportant {
+                display: inline;
             }
         }
     }
@@ -109,13 +123,13 @@
     }
 }
 
-@mixin media-max($breakpoint) {
+@mixin media-smaller-than($breakpoint) {
     @media(max-width: ($breakpoint - pixels-media(1))) {
         @content;
     }
 }
 
-@mixin media-min($breakpoint) {
+@mixin media-larger-than($breakpoint) {
     @media(min-width: $breakpoint) {
         @content;
     }
@@ -127,7 +141,7 @@
             @content;
         }
     }
- 
+
     @if $resolve-auto {
         @media (prefers-color-scheme: dark) {
             @at-root html[data-theme="auto"] {
@@ -162,5 +176,16 @@
         #{$selector} {
             @content;
         }
+    }
+}
+
+@mixin support-fallback($key, $value, $fallbackValue: null) {
+    @supports (#{$key}: #{$value}) {
+        #{$key}: #{$value};
+    }
+
+    @supports not (#{$key}: #{$value}) {
+        #{$key}: #{$fallbackValue};
+        @content;
     }
 }

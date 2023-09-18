@@ -4,6 +4,7 @@ import * as datetime from "./datetime.js";
 import * as feather from "./feather.js";
 import * as giscus from "./giscus.js";
 import * as googleAnalytics from "./googleAnalytics.js";
+import * as visibilityTriggers from "./visibilityTriggers.js";
 
 let didRunOnLoad = false;
 function onLoad() {
@@ -18,6 +19,7 @@ function onLoad() {
     feather.onLoad();
     giscus.onLoad();
     googleAnalytics.onLoad();
+    visibilityTriggers.onLoad();
 }
 
 window.addEventListener("DOMContentLoaded", onLoad);

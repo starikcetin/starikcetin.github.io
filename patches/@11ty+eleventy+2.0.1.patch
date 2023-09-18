@@ -1,0 +1,18 @@
+diff --git a/node_modules/@11ty/eleventy/src/Engines/Pug.js b/node_modules/@11ty/eleventy/src/Engines/Pug.js
+index 100b0c6..a5a45c8 100644
+--- a/node_modules/@11ty/eleventy/src/Engines/Pug.js
++++ b/node_modules/@11ty/eleventy/src/Engines/Pug.js
+@@ -35,7 +35,12 @@ class Pug extends TemplateEngine {
+       options.filename = inputPath;
+     }
+ 
+-    return this.pugLib.compile(str, options);
++    // return this.pugLib.compile(str, options);
++    const renderFunc = (locals) => {
++      const compiledFunc = this.pugLib.compile(str, options);
++      return compiledFunc(locals);
++    }
++    return renderFunc;
+   }
+ }
+ 
