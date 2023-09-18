@@ -79,7 +79,8 @@
 
 @mixin horizontal-list($seperator-width, $child-selector: "> *", $inline: false, $skip: 0) {
     padding: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 
     @if $inline {
         display: inline;
