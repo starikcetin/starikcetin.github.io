@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
     starryNightInstance = await starryNight.createStarryNight(starryNight.common);
   });
 
-  eleventyConfig.on("afterBuild", async () => {
+  eleventyConfig.on("eleventy.after", async () => {
     await esbuild.build({
       entryPoints: ["src/_styles/main.scss"],
       outdir: 'dist/styles',
