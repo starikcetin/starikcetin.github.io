@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "postinstall": "patch-package",
-    "parts:start": "npx @11ty/eleventy --serve",
-    "parts:build": "npx @11ty/eleventy",
+    "parts:start": "eleventy --serve",
+    "parts:build": "eleventy",
     "parts:clean": "rimraf dist",
     "build:prod": "cross-env DEPLOY_ENV=prod run-s parts:clean parts:build",
     "build:dev": "cross-env DEPLOY_ENV=dev run-s parts:clean parts:build",
