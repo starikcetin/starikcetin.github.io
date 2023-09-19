@@ -29,7 +29,7 @@ article.projects
     .items-container
         each projectItem in pageItems
             section.item
-                h2.name: a(href=_.factory.projectLink(projectItem.name))= projectItem.name
+                h2.name= projectItem.name
                 ul.details
                     li= projectItem.type
                     li= projectItem.for
