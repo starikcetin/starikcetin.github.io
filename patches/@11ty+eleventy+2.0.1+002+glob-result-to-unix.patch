@@ -1,0 +1,13 @@
+diff --git a/node_modules/@11ty/eleventy/src/FileSystemSearch.js b/node_modules/@11ty/eleventy/src/FileSystemSearch.js
+index 9e4e8e6..a081c23 100644
+--- a/node_modules/@11ty/eleventy/src/FileSystemSearch.js
++++ b/node_modules/@11ty/eleventy/src/FileSystemSearch.js
+@@ -61,7 +61,7 @@ class FileSystemSearch {
+         )
+       ).then((results) => {
+         this.outputs[cacheKey] = new Set(
+-          results.map((entry) => TemplatePath.addLeadingDotSlash(entry))
++          results.map((entry) => TemplatePath.addLeadingDotSlash(entry).replace("\\", "/"))
+         );
+         return Array.from(this.outputs[cacheKey]);
+       });

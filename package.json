@@ -17,6 +17,8 @@
     "esbuild": "^0.19.2",
     "esbuild-sass-plugin": "^2.15.0",
     "evaluate-value": "^2.0.0",
+    "fast-glob": "^3.3.1",
+    "get-root-path": "^2.0.2",
     "hast-util-to-html": "^9.0.0",
     "http-equiv-refresh": "^2.0.1",
     "js-yaml": "^4.1.0",
@@ -24,12 +26,15 @@
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-for-inline": "^0.1.1",
+    "normalize-path": "^3.0.0",
     "npm-run-all": "^4.1.5",
     "parse-srcset": "^1.0.2",
     "patch-package": "^8.0.0",
     "posthtml": "^0.16.6",
+    "require-yml": "^2.0.0",
     "rimraf": "^5.0.1",
-    "slugify": "^1.6.6"
+    "slugify": "^1.6.6",
+    "upath": "^2.0.1"
   },
   "dependencies": {
     "dayjs": "^1.11.9",

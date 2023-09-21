@@ -8,6 +8,7 @@ const utils = require("./scripts/utils.js");
 const slugify = require("./scripts/custom-slugify.js");
 const factory = require("./scripts/factory.js");
 const uniqueId = require("./scripts/uniqueId.js");
+const sourceGenerator = require("./scripts/sourceGenerator.js");
 
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
@@ -29,9 +30,14 @@ module.exports = function (eleventyConfig) {
 
   let starryNightInstance;
 
-  eleventyConfig.on('eleventy.before', async ({}) => {
+  eleventyConfig.on('eleventy.before', async () => {
     await importEsmDeps();
     starryNightInstance = await starryNight.createStarryNight(starryNight.common);
+    sourceGenerator.onBefore(eleventyConfig);
+  });
+
+  eleventyConfig.on("eleventy.beforeWatch", async (changedFiles) => {
+    sourceGenerator.onBeforeWatch(eleventyConfig, changedFiles);
   });
 
   eleventyConfig.on("eleventy.after", async () => {
@@ -53,6 +59,8 @@ module.exports = function (eleventyConfig) {
       sourcemap: !isProduction,
       target: 'es6',
     });
+
+    sourceGenerator.onAfter(eleventyConfig);
   });
 
   const markdownItInstance = new markdownIt({
@@ -104,6 +112,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/_assets/": "/" });
   eleventyConfig.addWatchTarget("./src/**");
   eleventyConfig.addWatchTarget("./*.js");
+  eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.setServerOptions({
     domDiff: false,
@@ -134,6 +143,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setPugOptions({
     globals: ["_"],
   });
+
+  sourceGenerator.onConfig(eleventyConfig);
 
   return {
     dir: {
