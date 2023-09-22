@@ -1,0 +1,43 @@
+---
+layout: base
+---
+include /m_youtubeEmbed
+include /m_feather
+include /m_anchoredHeading
+
+article.projects
+    header
+        h1= title
+        .subtitle: p= subtitle
+        if pagination.hrefs.length > 1
+            include /i_paginator
+
+    .items-container
+        each projectItem in pageItems
+            section.item
+                h2.name= projectItem.name
+                ul.details
+                    li= projectItem.type
+                    li= projectItem.for
+                    each linkItem in projectItem.links
+                        li: a(href=linkItem.url target="_blank")= linkItem.name
+                if projectItem.youtubeId
+                    .media
+                        .placeholder
+                            +feather("film")
+                            span Loading
+                        +youtubeEmbed(projectItem.youtubeId)
+                if projectItem.description
+                    p.description= projectItem.description
+                p.categories
+                    span Categories:
+                    each categoryItem in projectItem.categories
+                        a(href=`/projects/categories/${_.slugify(categoryItem)}`)= categoryItem
+                p.involvement
+                    span Involvement:
+                    each involvementItem in projectItem.involvement
+                        a(href=`/projects/involvement/${_.slugify(involvementItem)}`)= involvementItem
+
+    if pagination.hrefs.length > 1
+        footer
+            include /i_paginator

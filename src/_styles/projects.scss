@@ -70,11 +70,7 @@
             }
 
             .categories {
-                @include horizontal-list($seperator-width: 1em);
-
-                @include media-larger-than($two-col-breakpoint) {
-                    text-align: center;
-                }
+                @include horizontal-list($seperator-width: 1em, $skip: 1);
             }
 
             .media {
@@ -82,6 +78,7 @@
                 width: 100%;
                 max-width: pixels-content(600);
                 position: relative;
+                margin: 1.5rem auto;
 
                 @include media-larger-than($two-col-breakpoint) {
                     margin-left: auto;

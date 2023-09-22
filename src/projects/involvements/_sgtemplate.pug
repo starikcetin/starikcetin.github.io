@@ -1,0 +1,13 @@
+---
+layout: projects
+title: "Projects | __SG_TITLE__"
+subtitle: This page contains notable projects I took part in with a __SG_TITLE__ role.
+pagination:
+    data: projects
+    size: 9
+    alias: pageItems
+    generatePageOnEmptyData: true
+    addAllPagesToCollections: true
+permalink: |
+    | projects/involvement/__SG_SLUG__/#{pagination.pageNumber > 0 ? `page-${pagination.pageNumber + 1}/` : ''}
+---
