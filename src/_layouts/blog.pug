@@ -21,7 +21,7 @@ article.blog
                 li: +readingTime(postItem.content)
             p.excerpt!= _.markdownIt.renderInline(postItem.data.page.excerpt)
     else
-        p.empty-blog-text No posts on this blog yet. Check back soon!
+        p.empty-blog-text There are no posts on this blog yet. Check back soon!
     
     if pagination.hrefs.length > 1
         footer

@@ -15,7 +15,7 @@ const plugin = (option, Dayjs, dayjs) => {
 
     // https://www.w3.org/Protocols/rfc822/#z28
     Dayjs.prototype.toRfc822 = function () { return this.format("ddd, DD MMM YYYY HH:mm:ss ZZ"); };
-   
+
     dayjs.now = function () { return dayjs(); };
     dayjs.sane = function (date) { return hasValue(date) ? dayjs(date) : undefined; };
 
