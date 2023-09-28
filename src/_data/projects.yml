@@ -11,7 +11,8 @@
   youtubeId: fo1ILA-yikk
   description: # TODO
   dataDates:
-    modified: "1997-01-01 Z+3"
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: 8 Puzzle
   type: School Project
@@ -25,6 +26,9 @@
       url: https://starikcetin.github.io/8-puzzle
   youtubeId: XPpebuDhdXM
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Blockchain Technology Education Software
   type: School Project
@@ -37,6 +41,9 @@
   youtubeId: # TODO
   description: >
     Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Computer Graphics Final
   type: School Project
@@ -50,6 +57,9 @@
       url: https://github.com/starikcetin/computer-graphics-final/releases/tag/build
   youtubeId: KMD9lkEcwl8
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Guess the Number
   type: School Project
@@ -63,6 +73,9 @@
       url: https://play.google.com/store/apps/details?id=com.starikcetin.ctis487.guessthenumber
   youtubeId: o14L_kNbGyk
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Technical Math Projects
   type: School Project
@@ -76,6 +89,9 @@
       url: https://github.com/starikcetin/technical-math-projects/releases/tag/builds
   youtubeId: TvdwiwdOOVk
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Hexfall Clone
   type: Case Study
@@ -89,6 +105,9 @@
       url: https://play.google.com/store/apps/details?id=com.starikcetin.hexfallClone
   youtubeId: kYdHKUxCctw
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Space Invaders Clone
   type: Case Study
@@ -102,6 +121,9 @@
       url: https://play.google.com/store/apps/details?id=com.starikcetin.spaceinvaders
   youtubeId: UAQnx0tBGQY
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Best Painter
   type: Proprietary
@@ -113,6 +135,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.bestpainter
   youtubeId: 3WbGQjwfScU
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Bracelet Run
   type: Proprietary
@@ -124,6 +149,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.braceletrun
   youtubeId: N8jgqYt-B3Q
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Car Wash Run
   type: Proprietary
@@ -135,6 +163,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.carwashrun
   youtubeId: 7fkrnVPxslw
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Church Life 3D
   type: Proprietary
@@ -146,6 +177,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.churchlife3d
   youtubeId: Jh7OU-Swvl8
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Feet Runner
   type: Proprietary
@@ -157,6 +191,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.feetrunner3d
   youtubeId: 0ahSaYObaW4
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Hold My Hand
   type: Proprietary
@@ -168,6 +205,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.holdmyhand
   youtubeId: 6A7B1Or_ydo
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Hospital Run 3D
   type: Proprietary
@@ -179,6 +219,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.hospitalrun
   youtubeId: uvEjSWLJFm8
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Ice Cream Stack
   type: Proprietary
@@ -190,6 +233,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.icecreamstack
   youtubeId: z75JahNZJeQ
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Judgement Run
   type: Proprietary
@@ -203,6 +249,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.runandjudge
   youtubeId: dzN_S5_m7UU
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Luggage Rush
   type: Proprietary
@@ -214,6 +263,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.luggagerush
   youtubeId: 6IecOEre9aE
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Merge Puzzle 3D
   type: Proprietary
@@ -225,6 +277,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.mergepuzzle3d
   youtubeId: AzAizo41JSc
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Muscle Ball 3D
   type: Proprietary
@@ -236,6 +291,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.musclefootball3d
   youtubeId: -uik1EdOczc
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Powder Paint
   type: Proprietary
@@ -247,6 +305,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.powderpaint
   youtubeId: hY6ATvFr99g
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Presidency Run 3D
   type: Proprietary
@@ -258,6 +319,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.presidencyrun3d
   youtubeId: Av708WXAd8k
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Psychologist 3D
   type: Proprietary
@@ -269,6 +333,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.psychologist3d
   youtubeId: d3YVStN9Te4
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: School Run 3D
   type: Proprietary
@@ -280,6 +347,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.schoolrun3d
   youtubeId: v8oNtb732NY
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Snake Rush 3D
   type: Proprietary
@@ -291,6 +361,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.snakerush3d
   youtubeId: pdmpobXmlOE
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Stack Coaster
   type: Proprietary
@@ -302,6 +375,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.stackcoaster
   youtubeId: ponOaqOGFq8
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Stuck In Sims
   type: Competition
@@ -313,6 +389,9 @@
       url: https://globalgamejam.org/2022/games/stuck-sims-5
   youtubeId: # TODO
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Sugarcane Juice Making
   type: Proprietary
@@ -324,6 +403,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.sugarcanejuicer
   youtubeId: 4qz-EOfA934
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Table Football Run
   type: Proprietary
@@ -335,6 +417,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.tablefootballrun
   youtubeId: p_MlNB0M9Hw
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Theme Park Dude
   type: Proprietary
@@ -346,6 +431,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.themeparkdude
   youtubeId: wzehr6UpEtk
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Tire Jump
   type: Proprietary
@@ -357,6 +445,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.tirejump
   youtubeId: JqCbvuvxKVw
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Toy Crane Run
   type: Proprietary
@@ -368,6 +459,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.toycranerun
   youtubeId: 0y-AShl6YRA
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Wide President
   type: Proprietary
@@ -379,6 +473,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.widepresident
   youtubeId: Q7CZcNein8o
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Word Dice
   type: Proprietary
@@ -392,6 +489,9 @@
       url: https://play.google.com/store/apps/details?id=com.easyclap.worddice
   youtubeId: # TODO
   description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: BindingsRx TextMeshPro
   type: Open Source
@@ -406,6 +506,9 @@
   youtubeId: # TODO
   description: >
     Unity plugin implementing BindingsRx support for TextMeshPro.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Eflatun.SceneReference
   type: Open Source
@@ -420,6 +523,9 @@
   youtubeId: # TODO
   description: >
     Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Git UPM Publisher
   type: Open Source
@@ -434,6 +540,9 @@
   youtubeId: # TODO
   description: >
     Automates UPM package releases for Git repositories containing Unity plugins.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Learning Unity ECS
   type: Open Source
@@ -448,6 +557,9 @@
   youtubeId: # TODO
   description: >
     Educational repositories with several small projects using the new ECS and Job System of Unity.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Quick Play Tool
   type: Open Source
@@ -462,6 +574,9 @@
   youtubeId: # TODO
   description: >
     Unity tool for speeding up scene switching and playtesting while working with multiple scenes.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - name: Unity CCD Locker
   type: Open Source
@@ -476,3 +591,6 @@
   youtubeId: # TODO
   description: >
     Git-based locking mechanism preventing simultaneous operations on Unity CCD buckets.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"

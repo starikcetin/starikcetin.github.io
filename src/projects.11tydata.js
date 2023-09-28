@@ -1,5 +1,5 @@
-const dayjs = require("../../../scripts/augmented-dayjs");
-const { mapProxy } = require("../../../scripts/utils");
+const dayjs = require("../scripts/augmented-dayjs");
+const { mapProxy } = require("../scripts/utils");
 
 const getDatesObjects = (data) => [
     data.ownDates, 
@@ -7,9 +7,6 @@ const getDatesObjects = (data) => [
 ];
 
 module.exports = {
-    pagination: {
-        before: (paginationData, fullData) => fullData.projects.filter(x => x.involvement.includes("__SG_TITLE__")),
-    },
     eleventyComputed : {
         dates: {
             published: data => data.ownDates.published,

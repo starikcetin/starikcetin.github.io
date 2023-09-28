@@ -1,5 +1,5 @@
 const { hasValue } = require("../nullish.js");
-const { pick, sort } = require("../utils.js");
+const { pick, sort, mapProxy } = require("../utils.js");
 
 const pickValueForNullishForSort = (order) => "ascending" === order ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY;
 
@@ -37,14 +37,31 @@ const plugin = (option, Dayjs, dayjs) => {
         modifiedOrPublished: function (page) { return dayjs.fromData.modifiedOrPublished(page?.data); },
     };
 
+    dayjs.fromArray = {
+        ofDate: {
+            newest: function (arr) { return dayjs.sane(pick(arr, x => dayjs.sane(x)?.valueOf(), Math.max)) },
+            oldest: function (arr) { return dayjs.sane(pick(arr, x => dayjs.sane(x)?.valueOf(), Math.min)) },
+        },
+        ofDatesObject: {
+            published: {
+                newest: function (arr) { return dayjs.fromArray.ofDate.newest(mapProxy(arr, x => dayjs.fromDates.published(x))) },
+                oldest: function (arr) { return dayjs.fromArray.ofDate.oldest(mapProxy(arr, x => dayjs.fromDates.published(x))) },
+            },
+            modifiedOrPublished: {
+                newest: function (arr) { return dayjs.fromArray.ofDate.newest(mapProxy(arr, x => dayjs.fromDates.modifiedOrPublished(x))) },
+                oldest: function (arr) { return dayjs.fromArray.ofDate.oldest(mapProxy(arr, x => dayjs.fromDates.modifiedOrPublished(x))) },
+            },
+        },
+    };
+
     dayjs.fromCollection = {
         published: {
-            newest: function (collection) { return dayjs.sane(pick(collection, x => dayjs.fromPage.published(x)?.valueOf(), Math.max)) },
-            oldest: function (collection) { return dayjs.sane(pick(collection, x => dayjs.fromPage.published(x)?.valueOf(), Math.min)) },
+            newest: function (collection) { return dayjs.fromArray.ofDatesObject.published.newest(mapProxy(collection, x => dayjs.fromPage.published(x))) },
+            oldest: function (collection) { return dayjs.fromArray.ofDatesObject.published.oldest(mapProxy(collection, x => dayjs.fromPage.published(x))) },
         },
         modifiedOrPublished: {
-            newest: function (collection) { return dayjs.sane(pick(collection, x => dayjs.fromPage.modifiedOrPublished(x)?.valueOf(), Math.max)) },
-            oldest: function (collection) { return dayjs.sane(pick(collection, x => dayjs.fromPage.modifiedOrPublished(x)?.valueOf(), Math.min)) },
+            newest: function (collection) { return dayjs.fromArray.ofDatesObject.modifiedOrPublished.newest(mapProxy(collection, x => dayjs.fromPage.modifiedOrPublished(x))) },
+            oldest: function (collection) { return dayjs.fromArray.ofDatesObject.modifiedOrPublished.oldest(mapProxy(collection, x => dayjs.fromPage.modifiedOrPublished(x))) },
         },
     };
 

@@ -21,8 +21,11 @@ const sort = (coll, calculator, order, valueForNullish = 0) => {
     return coll.slice().sort(compare);
 };
 
+const mapProxy = (arr, fn) => [...arr].map(fn);
+
 module.exports = {
+    __throw,
     pick,
     sort,
-    __throw
+    mapProxy,
 };

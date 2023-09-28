@@ -71,7 +71,11 @@ const getPathGroups = (eleventyConfig) => {
 const replaceTemplate = (content, title) => {
     return content
         .replaceAll('__SG_TITLE__', title)
-        .replaceAll('__SG_SLUG__', slugify(title));
+        .replaceAll('__SG_SLUG__', slugify(title))
+
+        // generated files will be in subfolders, make requires go up one more level
+        .replaceAll(/require\((['"])\.\//g, 'require($1../')
+        .replaceAll(/require\((['"])\.\.\//g, 'require($1../../');
 };
 
 const isGeneratedFile = (filePath) => path.basename(path.dirname(filePath)) === generatedDirName;

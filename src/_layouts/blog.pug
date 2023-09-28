@@ -10,16 +10,16 @@ article.blog
         //- if pagination.hrefs.length > 1
         //-     include /i_paginator
 
-    if posts.length > 0
-        each postItem in posts
+    if pageItems.length > 0
+        each pageItem in pageItems
             h2
-                a(href=postItem.url)= postItem.data.title
+                a(href=pageItem.url)= pageItem.data.title
             ul.details.font-small
-                li: +datetimeExact(postItem.data.dates.published, siteConfig.datetimeFormats.dateOnly)
-                if postItem.data.dates.modified
-                    li: span Updated #[+datetimeExact(postItem.data.dates.modified, siteConfig.datetimeFormats.dateOnly)]
-                li: +readingTime(postItem.content)
-            p.excerpt!= _.markdownIt.renderInline(postItem.data.page.excerpt)
+                li: +datetimeExact(pageItem.data.dates.published, siteConfig.datetimeFormats.dateOnly)
+                if pageItem.data.dates.modified
+                    li: span Updated #[+datetimeExact(pageItem.data.dates.modified, siteConfig.datetimeFormats.dateOnly)]
+                li: +readingTime(pageItem.content)
+            p.excerpt!= _.markdownIt.renderInline(pageItem.data.page.excerpt)
     else
         p.empty-blog-text There are no posts on this blog yet. Check back soon!
     

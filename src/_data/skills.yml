@@ -4,6 +4,9 @@
     - Expert knowledge of Unity and C#.
     - Intermediate knowledge of OpenGL, GLUT, and WebGL.
     - Experimented with Godot, Unreal, Pixi, Phaser, Cocos2d-x, and Box2D.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - title: Web Development
   since: 2015
@@ -11,6 +14,9 @@
     - Expert knowledge of React, TypeScript, and Node.
     - Intermediate knowledge of Angular, Stencil, Ionic, Socket.io, and Express.
     - Experience with Webpack, Parcel, Babel, Jest, and Firebase.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - title: Team Leadership
   since: 2020
@@ -18,3 +24,6 @@
     - Team lead and scrum master of the Unity Core Team in Albert.
     - De-facto tech lead of Easy Clap Games as the only senior developer.
     - Team leader and project manager of our senior project for Bilkent University.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"

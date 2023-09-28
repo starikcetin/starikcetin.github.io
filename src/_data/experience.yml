@@ -21,6 +21,9 @@
       description:
         - Integrate 3rd party SDKs such as Mixpanel, Braze, and Firebase.
         - Work with multiple teams. Ensure technical coordination.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - company: Easy Clap Games
   location: Ankara, Turkey
@@ -32,6 +35,9 @@
     - De-facto tech lead as the only senior developer. Mentor and guide all developers.
     - Develop hypercasual games with Unity for Android. Optimize, build, and publish all games.
     - Develop and maintain internal frameworks and tools. Integrate 3rd party SDKs such as GameAnalytics, Adjust, and Facebook.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
 
 - company: Parabol
   location: Ankara, Turkey
@@ -56,3 +62,6 @@
       type: Internship
       start: 2019-07
       end: 2019-08
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"

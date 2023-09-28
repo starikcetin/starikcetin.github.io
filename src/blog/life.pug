@@ -4,9 +4,12 @@ title: Life Blog
 pagination:
     data: collections.lifePost
     size: 5
-    alias: posts
+    alias: pageItems
     generatePageOnEmptyData: true
     addAllPagesToCollections: true
 permalink: | 
     | blog/life/#{pagination.pageNumber > 0 ? `page-${pagination.pageNumber + 1}/` : ''}
+ownDates:
+    published: "2023-09-11 20:00 Z+3"
+    modified: "2023-09-28 16:00 Z+3"
 ---
