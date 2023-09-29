@@ -6,6 +6,24 @@
             "command": "npm run start:dev",
             "request": "launch",
             "type": "node-terminal"
-        }
+        },
+        {
+            "name": "start:prod",
+            "command": "npm run start:prod",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "build:dev",
+            "command": "npm run build:dev",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "build:prod",
+            "command": "npm run build:prod",
+            "request": "launch",
+            "type": "node-terminal"
+        },
     ]
 }
