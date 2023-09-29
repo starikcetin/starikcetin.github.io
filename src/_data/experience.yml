@@ -2,7 +2,7 @@
   location: Gothenburg, Sweden
   type: Full-time
   start: 2022-04
-  end: Present
+  end: 2023-09
   description:
     - Develop educational games for children with Unity targeting iOS and Android.
     - Develop and maintain platform core, internal frameworks, tools, and CI systems.
@@ -10,7 +10,7 @@
   positions:
     - title: Unity Team Lead
       start: 2022-12
-      end: Present
+      end: 2023-09
       description:
         - Coordinate all teams. Set technical and workflow standards. Supervise monorepo.
         - Prepare and test releases. Optimize size and performance. Fix complex bugs.
@@ -23,7 +23,7 @@
         - Work with multiple teams. Ensure technical coordination.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-29 18:25 Z+3"
 
 - company: Easy Clap Games
   location: Ankara, Turkey
