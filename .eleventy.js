@@ -9,6 +9,7 @@ const slugify = require("./scripts/custom-slugify.js");
 const factory = require("./scripts/factory.js");
 const uniqueId = require("./scripts/uniqueId.js");
 const sourceGenerator = require("./scripts/sourceGenerator.js");
+const cacheBuster = require("./scripts/cacheBusting");
 
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
@@ -38,6 +39,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.on("eleventy.beforeWatch", async (changedFiles) => {
     sourceGenerator.onBeforeWatch(eleventyConfig, changedFiles);
+    cacheBuster.buster.onBeforeWatch(eleventyConfig, changedFiles);
   });
 
   eleventyConfig.on("eleventy.after", async () => {
@@ -61,6 +63,7 @@ module.exports = function (eleventyConfig) {
     });
 
     sourceGenerator.onAfter(eleventyConfig);
+    cacheBuster.buster.onAfter(eleventyConfig);
   });
 
   const markdownItInstance = new markdownIt({
@@ -145,6 +148,25 @@ module.exports = function (eleventyConfig) {
   });
 
   sourceGenerator.onConfig(eleventyConfig);
+
+  cacheBuster.buster.onConfig(eleventyConfig, {
+    assetExtensions: ["css", "js", "png", "jpg", "svg", "ico"],
+    ignoreAssetPaths: ["favicon.ico"],
+    replacementConfigs: [
+      {
+        extensions: ["html"],
+        replacer: cacheBuster.replacers.html,
+      },
+      {
+        extensions: ["webmanifest"],
+        replacer: cacheBuster.replacers.webmanifest,
+      },
+      {
+        extensions: ["xml"],
+        replacer: cacheBuster.replacers.xml,
+      },
+    ],
+  });
 
   return {
     dir: {
