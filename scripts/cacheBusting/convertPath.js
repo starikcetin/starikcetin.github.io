@@ -28,7 +28,7 @@ const convertPath = (oldUrl, assetPaths, distDirPath) => {
     const newPath = assetPaths[oldPath];
 
     if (isNullish(newPath)) {
-        return oldPathname;
+        return oldUrl;
     }
 
     const newPathname = '/' + path.relative(distDirPath, newPath);
