@@ -1,3 +1,15 @@
+- company: Undisclosed Game Project
+  location: Ankara, Turkey
+  type: Self-employed
+  title:
+  start: "2023-10-05 18:00 Z+3"
+  end: Present
+  description:
+    - Working on an undisclosed game project. More details will be available in the future.
+  dataDates:
+    published: "2023-10-05 18:05 Z+3"
+    modified: "2023-10-05 18:05 Z+3"
+
 - company: Albert
   location: Gothenburg, Sweden
   type: Full-time
