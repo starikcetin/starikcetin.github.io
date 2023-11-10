@@ -15,6 +15,7 @@ module.exports = {
         monthYear: "MMMM YYYY",
         dateOnly: "MMMM Do, YYYY",
         dateTime: "MMMM Do, YYYY, HH:mm",
+        yearOnly: "YYYY",
     },
     timespanFormats: {
         years: "%y",

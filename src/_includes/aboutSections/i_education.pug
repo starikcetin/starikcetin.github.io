@@ -9,8 +9,8 @@ section
         ul.details.horizontal-list.font-small
             li= educationItem.department
         ul.details.horizontal-list.font-small
-            li: +datetimeExact(educationItem.start, siteConfig.datetimeFormats.monthYear)
-            li: +datetimeExact(educationItem.end, siteConfig.datetimeFormats.monthYear)
+            li: +datetimeExact(educationItem.start, siteConfig.datetimeFormats.yearOnly)
+            li: +datetimeExact(educationItem.end, siteConfig.datetimeFormats.yearOnly)
             li= educationItem.location
             li= educationItem.grade
         ul.description.feather-ul
