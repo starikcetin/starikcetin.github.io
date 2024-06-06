@@ -14,116 +14,22 @@
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
 
-- name: 8 Puzzle
-  type: School Project
-  for: Bilkent CTIS
+- name: Eflatun.SceneReference
+  type: Open Source
+  for: the Community
   involvement: [Development]
-  categories: [Game, Web, JQuery]
+  categories: [Plugin, Unity]
   links:
     - name: GitHub
-      url: https://github.com/starikcetin/8-puzzle
-    - name: Website
-      url: https://starikcetin.github.io/8-puzzle
-  youtubeId: XPpebuDhdXM
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Blockchain Technology Education Software
-  type: School Project
-  for: Bilkent CTIS
-  involvement: [Development, DevOps, Project Management, Leadership]
-  categories: [App, Educational, Web, React, Node]
-  links:
-    - name: GitHub
-      url: https://github.com/ctisbtes/btes
+      url: https://github.com/starikcetin/Eflatun.SceneReference
+    - name: OpenUPM
+      url: https://openupm.com/packages/com.eflatun.scenereference
   youtubeId: # TODO
   description: >
-    Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
+    Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Computer Graphics Final
-  type: School Project
-  for: Bilkent CTIS
-  involvement: [Development]
-  categories: [Demo, Desktop, OpenGL, GLUT]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/computer-graphics-final
-    - name: Download
-      url: https://github.com/starikcetin/computer-graphics-final/releases/tag/build
-  youtubeId: KMD9lkEcwl8
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Guess the Number
-  type: School Project
-  for: Bilkent CTIS
-  involvement: [Development, Project Management, Leadership]
-  categories: [Game, Mobile, Java]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/ctis487-term-project
-    - name: Google Play
-      url: https://play.google.com/store/apps/details?id=com.starikcetin.ctis487.guessthenumber
-  youtubeId: o14L_kNbGyk
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Technical Math Projects
-  type: School Project
-  for: Bilkent CTIS
-  involvement: [Development]
-  categories: [Game, Animation, Desktop, OpenGL, GLUT]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/technical-math-projects
-    - name: Download
-      url: https://github.com/starikcetin/technical-math-projects/releases/tag/builds
-  youtubeId: TvdwiwdOOVk
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Hexfall Clone
-  type: Case Study
-  for: Vertigo Games
-  involvement: [Development]
-  categories: [Game, Mobile, Unity]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/hexfall-clone
-    - name: Google Play
-      url: https://play.google.com/store/apps/details?id=com.starikcetin.hexfallClone
-  youtubeId: kYdHKUxCctw
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Space Invaders Clone
-  type: Case Study
-  for: Masomo Games
-  involvement: [Development]
-  categories: [Game, Mobile, Cocos2d-x]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/space-invaders-clone
-    - name: Google Play
-      url: https://play.google.com/store/apps/details?id=com.starikcetin.spaceinvaders
-  youtubeId: UAQnx0tBGQY
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
 
 - name: Best Painter
   type: Proprietary
@@ -379,20 +285,6 @@
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
 
-- name: Stuck In Sims
-  type: Competition
-  for: Easy Clap Games
-  involvement: [Development, Project Management, Leadership]
-  categories: [Game, Desktop, VR, Unity]
-  links:
-    - name: Website
-      url: https://globalgamejam.org/2022/games/stuck-sims-5
-  youtubeId: # TODO
-  description: # TODO
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
 - name: Sugarcane Juice Making
   type: Proprietary
   for: Easy Clap Games
@@ -493,6 +385,68 @@
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
 
+- name: Stuck In Sims
+  type: Competition
+  for: Easy Clap Games
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Desktop, VR, Unity]
+  links:
+    - name: Website
+      url: https://globalgamejam.org/2022/games/stuck-sims-5
+  youtubeId: # TODO
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2023-09-28 17:30 Z+3"
+
+- name: 8 Puzzle
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Game, Web, JQuery]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/8-puzzle
+    - name: Website
+      url: https://starikcetin.github.io/8-puzzle
+  youtubeId: XPpebuDhdXM
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
+- name: Hexfall Clone
+  type: Case Study
+  for: Vertigo Games
+  involvement: [Development]
+  categories: [Game, Mobile, Unity]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/hexfall-clone
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.hexfallClone
+  youtubeId: kYdHKUxCctw
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
+- name: Space Invaders Clone
+  type: Case Study
+  for: Masomo Games
+  involvement: [Development]
+  categories: [Game, Mobile, Cocos2d-x]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/space-invaders-clone
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.spaceinvaders
+  youtubeId: UAQnx0tBGQY
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
 - name: BindingsRx TextMeshPro
   type: Open Source
   for: the Community
@@ -506,23 +460,6 @@
   youtubeId: # TODO
   description: >
     Unity plugin implementing BindingsRx support for TextMeshPro.
-  dataDates:
-    published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
-
-- name: Eflatun.SceneReference
-  type: Open Source
-  for: the Community
-  involvement: [Development]
-  categories: [Plugin, Unity]
-  links:
-    - name: GitHub
-      url: https://github.com/starikcetin/Eflatun.SceneReference
-    - name: OpenUPM
-      url: https://openupm.com/packages/com.eflatun.scenereference
-  youtubeId: # TODO
-  description: >
-    Scene references for Unity. Provides GUID, Path, Build Index, Name, and Address.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
@@ -594,3 +531,66 @@
   dataDates:
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
+
+- name: Blockchain Technology Education Software
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development, DevOps, Project Management, Leadership]
+  categories: [App, Educational, Web, React, Node]
+  links:
+    - name: GitHub
+      url: https://github.com/ctisbtes/btes
+  youtubeId: # TODO
+  description: >
+    Senior project for Bilkent University CTIS Department. Runs a simplified blockchain protocol based on Bitcoin, on a collaborative web platform.
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
+- name: Computer Graphics Final
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Demo, Desktop, OpenGL, GLUT]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/computer-graphics-final
+    - name: Download
+      url: https://github.com/starikcetin/computer-graphics-final/releases/tag/build
+  youtubeId: KMD9lkEcwl8
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
+- name: Guess the Number
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development, Project Management, Leadership]
+  categories: [Game, Mobile, Java]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/ctis487-term-project
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.starikcetin.ctis487.guessthenumber
+  youtubeId: o14L_kNbGyk
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
+
+- name: Technical Math Projects
+  type: School Project
+  for: Bilkent CTIS
+  involvement: [Development]
+  categories: [Game, Animation, Desktop, OpenGL, GLUT]
+  links:
+    - name: GitHub
+      url: https://github.com/starikcetin/technical-math-projects
+    - name: Download
+      url: https://github.com/starikcetin/technical-math-projects/releases/tag/builds
+  youtubeId: TvdwiwdOOVk
+  description: # TODO
+  dataDates:
+    published: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:30 Z+3"
