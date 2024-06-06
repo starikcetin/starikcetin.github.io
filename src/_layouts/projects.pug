@@ -18,7 +18,8 @@ article.projects
                 h2.name= projectItem.name
                 ul.details
                     li= projectItem.type
-                    li= projectItem.for
+                    if projectItem.for
+                        li= projectItem.for
                     each linkItem in projectItem.links
                         li: a(href=linkItem.url target="_blank")= linkItem.name
                 if projectItem.youtubeId

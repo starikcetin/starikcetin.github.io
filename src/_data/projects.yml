@@ -16,7 +16,6 @@
 
 - name: Eflatun.SceneReference
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Plugin, Unity]
   links:
@@ -387,7 +386,7 @@
 
 - name: Stuck In Sims
   type: Competition
-  for: Easy Clap Games
+  for: Global Game Jam
   involvement: [Development, Project Management, Leadership]
   categories: [Game, Desktop, VR, Unity]
   links:
@@ -397,7 +396,7 @@
   description: # TODO
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
+    modified: "2024-06-06 15:53 Z+3"
 
 - name: 8 Puzzle
   type: School Project
@@ -449,7 +448,6 @@
 
 - name: BindingsRx TextMeshPro
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Plugin, Unity]
   links:
@@ -466,7 +464,6 @@
 
 - name: Git UPM Publisher
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Tool, Unity, Node]
   links:
@@ -483,7 +480,6 @@
 
 - name: Learning Unity ECS
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Guide, Unity]
   links:
@@ -500,7 +496,6 @@
 
 - name: Quick Play Tool
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Plugin, Unity]
   links:
@@ -517,7 +512,6 @@
 
 - name: Unity CCD Locker
   type: Open Source
-  for: the Community
   involvement: [Development]
   categories: [Tool, Unity, Node]
   links:
