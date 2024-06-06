@@ -1,3 +1,16 @@
+- company: MoveAhead
+  location: Dublin, Ireland
+  type: Full-time
+  title: Game Development Lead Engineer & Unity SDK Specialist
+  start: "2024-05-29 11:00 Z+3"
+  end: Present
+  description:
+    - Lead the game development efforts.
+    - Develop and maintain the Unity SDK.
+  dataDates:
+    published: "2024-06-06 15:00 Z+3"
+    modified: "2024-06-06 15:00 Z+3"
+
 - company: Undisclosed Game Project
   location: Ankara, Turkey
   type: Self-employed
