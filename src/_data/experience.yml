@@ -1,3 +1,12 @@
+- company: Sabbatical
+  start: 2023-10
+  end: Present
+  description:
+    - I took a career break to work out, meditate, and hone my skills.
+  dataDates:
+    published: "2024-07-26 23:17 Z+1"
+    modified: "2024-07-26 23:17 Z+1"
+
 - company: Albert
   location: Gothenburg, Sweden
   type: Full-time
