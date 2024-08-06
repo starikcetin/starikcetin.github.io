@@ -17,7 +17,8 @@ section
                         +feather("arrow-right")
                         ul.horizontal-list
                             li= positionItem.title
-                            li= positionItem.type
+                            if positionItem.type
+                                li= positionItem.type
                             li: +datetimeExact(positionItem.start, siteConfig.datetimeFormats.monthYear)
                             li: +datetimeExact(positionItem.end, siteConfig.datetimeFormats.monthYear)
         ul.description.feather-ul

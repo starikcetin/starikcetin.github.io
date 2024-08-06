@@ -1,11 +1,12 @@
-- company: Sabbatical
+- company: Career Break
+  title: Sabbatical
   start: 2023-10
   end: Present
   description:
-    - I took a career break to work out, meditate, and hone my skills.
+    - Working out, meditating, and travelling; to improve my fortitude, resilience, and composure.
   dataDates:
     published: "2024-07-26 23:17 Z+1"
-    modified: "2024-07-26 23:17 Z+1"
+    modified: "2024-08-06 13:56 Z+3"
 
 - company: Albert
   location: Gothenburg, Sweden
@@ -13,26 +14,23 @@
   start: 2022-04
   end: 2023-09
   description:
-    - Develop educational games for children with Unity targeting iOS and Android.
-    - Develop and maintain platform core, internal frameworks, tools, and CI systems.
-  positionsAsDetails: false
+    - "Developed Albert Junior: a set of educational games with Unity and React Native targeting iOS and Android."
+    - Developed and maintained the Unity platform core, internal frameworks, tools, and CI systems.
+    - Prepared and tested releases. Optimised size and performance. Fixed complex bugs.
+    - Supervised Unity monorepo. Ensured technical coordination. Led cross-team concerns.
+    - Integrated and maintained 3rd party SDKs such as Mixpanel, Braze, and Firebase.
+  positionsAsDetails: true
   positions:
     - title: Unity Team Lead
       start: 2022-12
       end: 2023-09
-      description:
-        - Coordinate all teams. Set technical and workflow standards. Supervise monorepo.
-        - Prepare and test releases. Optimize size and performance. Fix complex bugs.
 
     - title: Senior Unity Developer
       start: 2022-04
       end: 2022-12
-      description:
-        - Integrate 3rd party SDKs such as Mixpanel, Braze, and Firebase.
-        - Work with multiple teams. Ensure technical coordination.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-29 18:25 Z+3"
+    modified: "2024-08-06 13:58 Z+3"
 
 - company: Easy Clap Games
   location: Ankara, Turkey
@@ -41,20 +39,33 @@
   start: 2021-08
   end: 2022-04
   description:
-    - De-facto tech lead as the only senior developer. Mentor and guide all developers.
-    - Develop hypercasual games with Unity for Android. Optimize, build, and publish all games.
-    - Develop and maintain internal frameworks and tools. Integrate 3rd party SDKs such as GameAnalytics, Adjust, and Facebook.
+    - Developed 6 hypercasual games with Unity targeting Android.
+    - Optimised, built, and published 25 hypercasual games with Unity targeting Android.
+    - Developed and maintained internal frameworks and tools.
+    - Mentored all developers and led all projects as the de facto tech lead.
+    - Integrated and maintained 3rd party SDKs such as GameAnalytics, Adjust, and Facebook.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
     modified: "2023-09-28 17:30 Z+3"
+
+- company: Career Break
+  title: Education
+  start: 2020-09
+  end: 2021-07
+  description:
+    - Led, managed, and developed our senior project Blockchain Technology Education Software (BTES) with React, Node, and Mongo.
+  dataDates:
+    published: "2024-08-06 14:01 Z+3"
+    modified: "2024-08-06 14:01 Z+3"
 
 - company: Parabol
   location: Ankara, Turkey
   start: 2019-07
   end: 2020-09
   description:
-    - Develop ARCitizen, an R&D project for TUBITAK (Scientific and Technological Research Council of Turkey) with Unity and Vuforia targeting Android and iOS.
-    - Develop B2G and B2B web apps with React, Angular, and Ionic. Develop open-source web components with Stencil.
+    - "Developed ARCitizen: R&D project for TÜBİTAK with Unity and Vuforia targeting Android and iOS."
+    - "Developed METIS, SBS, and Cermoni: proprietary web applications with React, Angular, and Ionic."
+    - Developed open-source web components with StencilJs. They were also internally used across products.
   positionsAsDetails: true
   positions:
     - title: Frontend Developer
@@ -73,4 +84,4 @@
       end: 2019-08
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
+    modified: "2024-08-06 14:02 Z+3"
