@@ -1,12 +1,24 @@
+- company: Deep Space Interactive
+  location: Ankara, Turkey
+  type: Full-time
+  title: Founder
+  start: 2024-10
+  end: Present
+  description:
+    - Deep Space Interactive is an indie game development studio.
+  dataDates:
+    published: "2024-10-18 02:37 Z+3"
+    modified: "2024-10-18 02:37 Z+3"
+
 - company: Career Break
   title: Sabbatical
   start: 2023-10
-  end: Present
+  end: 2024-09
   description:
     - Working out, meditating, and travelling; to improve my fortitude, resilience, and composure.
   dataDates:
     published: "2024-07-26 23:17 Z+1"
-    modified: "2024-08-06 13:56 Z+3"
+    modified: "2024-10-18 02:29 Z+3"
 
 - company: Albert
   location: Gothenburg, Sweden
