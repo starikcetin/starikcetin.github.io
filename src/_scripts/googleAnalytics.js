@@ -7,6 +7,6 @@ export function onLoad() {
             cookie_domain: siteConfig.baseUrl.replace(/^https?:\/\//, ''),
             cookie_flags: 'SameSite=None;Secure',
         });
-        gtag('config', siteConfig.google_analytics);
+        gtag('config', siteConfig.googleAnalytics);
     }
 }
