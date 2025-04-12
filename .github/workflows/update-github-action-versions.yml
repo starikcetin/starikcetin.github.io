@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
         with:
           token: ${{ secrets.ACTIONS_UPDATER_TOKEN }}
       - uses: saadmk11/github-actions-version-updater@v0.8.1
