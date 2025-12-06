@@ -5,32 +5,31 @@
   start: 2024-10
   end: Present
   description:
-    - We are an indie game studio. Contact us to discuss business or chat about your favourite games.
+    - I have founded this indie game studio to bring my passion for games to life.
   dataDates:
     published: "2024-10-18 02:37 Z+3"
-    modified: "2025-04-12 18:14 Z+3"
+    modified: "2025-12-06 16:53 Z+3"
 
-- company: Career Break
-  title: Sabbatical
-  start: 2023-10
-  end: 2024-09
-  description:
-    - Working out, meditating, and travelling; to improve my fortitude, resilience, and composure.
-  dataDates:
-    published: "2024-07-26 23:17 Z+1"
-    modified: "2024-10-18 02:29 Z+3"
+# - company: Career Break
+#   title: Sabbatical
+#   start: 2023-10
+#   end: 2024-09
+#   description:
+#     - Working out, meditating, and travelling; to improve my fortitude, resilience, and composure.
+#   dataDates:
+#     published: "2024-07-26 23:17 Z+1"
+#     modified: "2024-10-18 02:29 Z+3"
 
 - company: Albert
   location: Gothenburg, Sweden
   type: Full-time
-  start: 2022-04
-  end: 2023-09
+  # start: 2022-04
+  # end: 2023-09
   description:
-    - "Developed Albert Junior: a set of educational games with Unity and React Native targeting iOS and Android."
-    - Developed and maintained the Unity platform core, internal frameworks, tools, and CI systems.
-    - Prepared and tested releases. Optimised size and performance. Fixed complex bugs.
-    - Supervised Unity monorepo. Ensured technical coordination. Led cross-team concerns.
-    - Integrated and maintained 3rd party SDKs such as Mixpanel, Braze, and Firebase.
+    - "Took part in development of Albert Junior: an educational games platform created with Unity and React Native, published on iOS and Android."
+    - Led the development of the Unity the platform core, internal Unity frameworks and tools, and the Unity CI system.
+    - Supervised the Unity codebase. Optimised application size and performance. Fixed complex cross-cutting bugs. Ensured technical coordination across multiple teams.
+    - Led the integration of 3rd party SDKs such as Mixpanel, Braze, and Firebase.
   positionsAsDetails: true
   positions:
     - title: Unity Team Lead
@@ -42,7 +41,7 @@
       end: 2022-12
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2024-08-06 13:58 Z+3"
+    modified: "2025-12-06 18:18 Z+3"
 
 - company: Easy Clap Games
   location: Ankara, Turkey
@@ -51,33 +50,31 @@
   start: 2021-08
   end: 2022-04
   description:
-    - Developed 6 hypercasual games with Unity targeting Android.
-    - Optimised, built, and published 25 hypercasual games with Unity targeting Android.
-    - Developed and maintained internal frameworks and tools.
-    - Mentored all developers and led all projects as the de facto tech lead.
-    - Integrated and maintained 3rd party SDKs such as GameAnalytics, Adjust, and Facebook.
+    - Led the development and optimisation of 25 hypercasual games created with Unity, published on Android. 6 of them were developed by me directly.
+    - Developed internal Unity frameworks and tools.
+    - Integrated 3rd party SDKs such as GameAnalytics, Adjust, and Facebook.
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2023-09-28 17:30 Z+3"
+    modified: "2025-12-06 18:18 Z+3"
 
-- company: Career Break
-  title: Education
-  start: 2020-09
-  end: 2021-07
-  description:
-    - Led, managed, and developed our senior project Blockchain Technology Education Software (BTES) with React, Node, and Mongo.
-  dataDates:
-    published: "2024-08-06 14:01 Z+3"
-    modified: "2024-08-06 14:01 Z+3"
+# - company: Career Break
+#   title: Education
+#   start: 2020-09
+#   end: 2021-07
+#   description:
+#     - Led, managed, and developed our senior project Blockchain Technology Education Software (BTES) with React, Node, and Mongo.
+#   dataDates:
+#     published: "2024-08-06 14:01 Z+3"
+#     modified: "2024-08-06 14:01 Z+3"
 
 - company: Parabol
   location: Ankara, Turkey
-  start: 2019-07
-  end: 2020-09
+  # start: 2019-07
+  # end: 2020-09
   description:
-    - "Developed ARCitizen: R&D project for TÜBİTAK with Unity and Vuforia targeting Android and iOS."
-    - "Developed METIS, SBS, and Cermoni: proprietary web applications with React, Angular, and Ionic."
-    - Developed open-source web components with StencilJs. They were also internally used across products.
+    - "Developed ARCitizen: AR smart city application created with Unity and Vuforia, targeting Android and iOS. R&D project for TÜBİTAK."
+    - "Developed METIS, SBS, and Cermoni: B2G web applications created with React, Angular, and Ionic."
+    - Developed open-source web components with Stencil. They were also used internally across the products mentioned above.
   positionsAsDetails: true
   positions:
     - title: Frontend Developer
@@ -96,4 +93,4 @@
       end: 2019-08
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2024-08-06 14:02 Z+3"
+    modified: "2025-12-06 18:18 Z+3"

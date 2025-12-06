@@ -2,7 +2,7 @@ module.exports = {
     deployEnv: process.env.DEPLOY_ENV,
     baseUrl: "https://starikcetin.github.io",
     title: "S. Tarık Çetin",
-    description: "This is my personal website. On this website, you can find information about me, my projects, my blog posts, and some other things.",
+    description: "Welcome to my personal website. Here you can find information about me and the notable projects that I took part in.",
     author: {
         name: "S. Tarık Çetin",
         email: {

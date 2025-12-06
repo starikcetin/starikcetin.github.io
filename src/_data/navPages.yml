@@ -5,8 +5,8 @@
 - name: Projects
   url: /projects
 
-- name: Tech Blog
-  url: /blog/tech
+# - name: Tech Blog
+#   url: /blog/tech
 
-- name: Life Blog
-  url: /blog/life
+# - name: Life Blog
+#   url: /blog/life
