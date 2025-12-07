@@ -72,9 +72,9 @@
   # start: 2019-07
   # end: 2020-09
   description:
-    - "Developed ARCitizen: AR smart city application created with Unity and Vuforia, targeting Android and iOS. R&D project for TÜBİTAK."
-    - "Developed METIS, SBS, and Cermoni: B2G web applications created with React, Angular, and Ionic."
+    - "Took part in development of METIS, SBS, and Cermoni: B2G web applications created with React, Angular, and Ionic."
     - Developed open-source web components with Stencil. They were also used internally across the products mentioned above.
+    - "Developed ARCitizen: AR smart city application created with Unity and Vuforia, targeting Android and iOS. R&D project for TÜBİTAK."
   positionsAsDetails: true
   positions:
     - title: Frontend Developer
@@ -93,4 +93,4 @@
       end: 2019-08
   dataDates:
     published: "2023-09-28 17:30 Z+3"
-    modified: "2025-12-06 18:18 Z+3"
+    modified: "2025-12-07 17:03 Z+3"
